@@ -9,11 +9,6 @@
 
         // 1 : * z BoardGameComment
         public List<BoardGameComment> Comments { get; set; } = new List<BoardGameComment>();
-
-        // 1 : * z User
-        public User User { get; set; }
-        public int UserId { get; set; } //Klucz obcyddd
-
         // 1 : * z Transaction
         public List<Transaction> Transactions { get; set; } = new List<Transaction>();
 

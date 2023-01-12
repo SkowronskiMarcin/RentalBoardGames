@@ -15,6 +15,6 @@
         // * : 1 z User
 
         public User User { get; set; }
-        public int UserId { get; set; }
+        public int UserId { get; set; } //Klucz obcy
     }
 }
