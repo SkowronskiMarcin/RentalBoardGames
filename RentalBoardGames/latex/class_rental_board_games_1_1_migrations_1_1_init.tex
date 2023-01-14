@@ -14,18 +14,601 @@ Inheritance diagram for Rental\+Board\+Games.\+Migrations.\+Init\+:\begin{figure
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_a8658da4ac266b2229854377b38407679}\label{class_rental_board_games_1_1_migrations_1_1_init_a8658da4ac266b2229854377b38407679}} 
-override void {\bfseries Up} (Migration\+Builder migration\+Builder)
+override void \mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_init_a8658da4ac266b2229854377b38407679}{Up}} (Migration\+Builder migration\+Builder)
 \item 
-\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_a1756ef04e9fb6cabecff4d7d8f2b7488}\label{class_rental_board_games_1_1_migrations_1_1_init_a1756ef04e9fb6cabecff4d7d8f2b7488}} 
-override void {\bfseries Down} (Migration\+Builder migration\+Builder)
+override void \mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_init_a1756ef04e9fb6cabecff4d7d8f2b7488}{Down}} (Migration\+Builder migration\+Builder)
 \item 
-\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_af220b9df162396af57f8624ca86a255a}\label{class_rental_board_games_1_1_migrations_1_1_init_af220b9df162396af57f8624ca86a255a}} 
-override void {\bfseries Build\+Target\+Model} (Model\+Builder model\+Builder)
+override void \mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_init_af220b9df162396af57f8624ca86a255a}{Build\+Target\+Model}} (Model\+Builder model\+Builder)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{20230106132958___init_8cs_source_l00011}{11}} of file \mbox{\hyperlink{20230106132958___init_8cs_source}{20230106132958\+\_\+\+Init.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_af220b9df162396af57f8624ca86a255a}\label{class_rental_board_games_1_1_migrations_1_1_init_af220b9df162396af57f8624ca86a255a}} 
+\index{RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}!BuildTargetModel@{BuildTargetModel}}
+\index{BuildTargetModel@{BuildTargetModel}!RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}}
+\doxysubsubsection{\texorpdfstring{BuildTargetModel()}{BuildTargetModel()}}
+{\footnotesize\ttfamily override void Rental\+Board\+Games.\+Migrations.\+Init.\+Build\+Target\+Model (\begin{DoxyParamCaption}\item[{Model\+Builder}]{model\+Builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line \mbox{\hyperlink{20230106132958___init_8_designer_8cs_source_l00019}{19}} of file \mbox{\hyperlink{20230106132958___init_8_designer_8cs_source}{20230106132958\+\_\+\+Init.\+Designer.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#pragma\ warning\ disable\ 612,\ 618 }}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasAnnotation(\textcolor{stringliteral}{"{}ProductVersion"{}},\ \textcolor{stringliteral}{"{}7.0.1"{}})}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasAnnotation(\textcolor{stringliteral}{"{}Relational:MaxIdentifierLength"{}},\ 128);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}BoardGameTag"{}},\ b\ =>}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}BoardGamesId"{}})}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}TagsId"{}})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}BoardGamesId"{}},\ \textcolor{stringliteral}{"{}TagsId"{}});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}TagsId"{}});}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}BoardGameTag"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Adress"{}},\ b\ =>}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}City"{}})}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Coutry"{}})}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}PostalCode"{}})}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Street"{}})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsUnique();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}Adresses"{}});}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ b\ =>}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Name"{}})}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Number\_of\_players"{}})}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}?>(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{bool}?>(\textcolor{stringliteral}{"{}availability"{}})}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}bit"{}});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}BoardGames"{}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasData(}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ 1,}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ \textcolor{stringliteral}{"{}Brzdek\ nie\ draznij\ smoka"{}},}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Numberofplayers\ =\ 4}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ 2,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ \textcolor{stringliteral}{"{}Everdell"{}},}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Numberofplayers\ =\ 4}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ 3,}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ \textcolor{stringliteral}{"{}Nemesis"{}},}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Numberofplayers\ =\ 5}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGameComment"{}},\ b\ =>}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Author"{}})}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}BoardGameId"{}})}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<DateTime>(\textcolor{stringliteral}{"{}CreatedDate"{}})}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}datetime2"{}})}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasDefaultValueSql(\textcolor{stringliteral}{"{}getutcdate()"{}});}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Message"{}})}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<DateTime?>(\textcolor{stringliteral}{"{}UpdatedDate"{}})}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnUpdate()}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}datetime2"{}});}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}BoardGameId"{}});}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}BoardGameComments"{}});}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Tag"{}},\ b\ =>}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Value"{}})}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}Tags"{}});}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Transaction"{}},\ b\ =>}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}BoardGameId"{}})}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<DateTime>(\textcolor{stringliteral}{"{}CreatedDate"{}})}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}datetime2"{}});}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<DateTime>(\textcolor{stringliteral}{"{}Deadline"{}})}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}datetime2"{}});}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}BoardGameId"{}});}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasIndex(\textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}Transactions"{}});}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ b\ =>}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}})}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}});}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}Id"{}}));}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}Email"{}})}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}FirstName"{}})}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{string}>(\textcolor{stringliteral}{"{}LastName"{}})}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}nvarchar(max)"{}});}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Property<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}UserType"{}})}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedOnAdd()}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}int"{}})}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasDefaultValue(1);}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasKey(\textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.ToTable(\textcolor{stringliteral}{"{}Users"{}});}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}BoardGameTag"{}},\ b\ =>}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany()}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}BoardGamesId"{}})}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Tag"{}},\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany()}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}TagsId"{}})}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Adress"{}},\ b\ =>}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ \textcolor{stringliteral}{"{}User"{}})}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithOne(\textcolor{stringliteral}{"{}Adress"{}})}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Adress"{}},\ \textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}User"{}});}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ b\ =>}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany(\textcolor{stringliteral}{"{}Rented\_Games"{}})}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGameComment"{}},\ b\ =>}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ \textcolor{stringliteral}{"{}BoardGame"{}})}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany(\textcolor{stringliteral}{"{}Comments"{}})}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}BoardGameId"{}})}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ \textcolor{stringliteral}{"{}User"{}})}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany(\textcolor{stringliteral}{"{}Comments"{}})}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00277\ }
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}BoardGame"{}});}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}User"{}});}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.Transaction"{}},\ b\ =>}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ \textcolor{stringliteral}{"{}BoardGame"{}})}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany(\textcolor{stringliteral}{"{}Transactions"{}})}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}BoardGameId"{}})}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.HasOne(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ \textcolor{stringliteral}{"{}User"{}})}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .WithMany(\textcolor{stringliteral}{"{}Transactions"{}})}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}UserId"{}})}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.Cascade)}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .IsRequired();}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}BoardGame"{}});}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}User"{}});}
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.BoardGame"{}},\ b\ =>}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Comments"{}});}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Transactions"{}});}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ modelBuilder.Entity(\textcolor{stringliteral}{"{}RentalBoardGames.Entities.User"{}},\ b\ =>}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Adress"{}});}
+\DoxyCodeLine{00312\ }
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Comments"{}});}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Rented\_Games"{}});}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b.Navigation(\textcolor{stringliteral}{"{}Transactions"{}});}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00319\ \textcolor{preprocessor}{\#pragma\ warning\ restore\ 612,\ 618 }}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_a1756ef04e9fb6cabecff4d7d8f2b7488}\label{class_rental_board_games_1_1_migrations_1_1_init_a1756ef04e9fb6cabecff4d7d8f2b7488}} 
+\index{RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}!Down@{Down}}
+\index{Down@{Down}!RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}}
+\doxysubsubsection{\texorpdfstring{Down()}{Down()}}
+{\footnotesize\ttfamily override void Rental\+Board\+Games.\+Migrations.\+Init.\+Down (\begin{DoxyParamCaption}\item[{Migration\+Builder}]{migration\+Builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line \mbox{\hyperlink{20230106132958___init_8cs_source_l00219}{219}} of file \mbox{\hyperlink{20230106132958___init_8cs_source}{20230106132958\+\_\+\+Init.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Adresses"{}});}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGameComments"{}});}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGameTag"{}});}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Transactions"{}});}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Tags"{}});}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGames"{}});}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.DropTable(}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Users"{}});}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rental_board_games_1_1_migrations_1_1_init_a8658da4ac266b2229854377b38407679}\label{class_rental_board_games_1_1_migrations_1_1_init_a8658da4ac266b2229854377b38407679}} 
+\index{RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}!Up@{Up}}
+\index{Up@{Up}!RentalBoardGames.Migrations.Init@{RentalBoardGames.Migrations.Init}}
+\doxysubsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily override void Rental\+Board\+Games.\+Migrations.\+Init.\+Up (\begin{DoxyParamCaption}\item[{Migration\+Builder}]{migration\+Builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line \mbox{\hyperlink{20230106132958___init_8cs_source_l00014}{14}} of file \mbox{\hyperlink{20230106132958___init_8cs_source}{20230106132958\+\_\+\+Init.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Tags"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Value\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_Tags"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Users"{}},}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FirstName\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LastName\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Email\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserType\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false},\ defaultValue:\ 1)}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_Users"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Adresses"{}},}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Coutry\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ City\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Street\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ PostalCode\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_Adresses"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_Adresses\_Users\_UserId"{}},}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.UserId,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}Users"{}},}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Name\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Numberofplayers\ =\ table.Column<\textcolor{keywordtype}{int}>(name:\ \textcolor{stringliteral}{"{}Number\_of\_players"{}},\ type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ availability\ =\ table.Column<\textcolor{keywordtype}{bool}>(type:\ \textcolor{stringliteral}{"{}bit"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_BoardGames"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_BoardGames\_Users\_UserId"{}},}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.UserId,}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}Users"{}},}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}});}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGameComments"{}},}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Message\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Author\ =\ table.Column<\textcolor{keywordtype}{string}>(type:\ \textcolor{stringliteral}{"{}nvarchar(max)"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CreatedDate\ =\ table.Column<DateTime>(type:\ \textcolor{stringliteral}{"{}datetime2"{}},\ nullable:\ \textcolor{keyword}{false},\ defaultValueSql:\ \textcolor{stringliteral}{"{}getutcdate()"{}}),}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UpdatedDate\ =\ table.Column<DateTime>(type:\ \textcolor{stringliteral}{"{}datetime2"{}},\ nullable:\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BoardGameId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_BoardGameComments"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_BoardGameComments\_BoardGames\_BoardGameId"{}},}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.BoardGameId,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_BoardGameComments\_Users\_UserId"{}},}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.UserId,}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}Users"{}},}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}BoardGameTag"{}},}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BoardGamesId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TagsId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_BoardGameTag"{}},\ x\ =>\ \textcolor{keyword}{new}\ \{\ x.BoardGamesId,\ x.TagsId\ \});}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_BoardGameTag\_BoardGames\_BoardGamesId"{}},}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.BoardGamesId,}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_BoardGameTag\_Tags\_TagsId"{}},}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.TagsId,}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}Tags"{}},}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateTable(}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}Transactions"{}},}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ table\ =>\ \textcolor{keyword}{new}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Id\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .Annotation(\textcolor{stringliteral}{"{}SqlServer:Identity"{}},\ \textcolor{stringliteral}{"{}1,\ 1"{}}),}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CreatedDate\ =\ table.Column<DateTime>(type:\ \textcolor{stringliteral}{"{}datetime2"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Deadline\ =\ table.Column<DateTime>(type:\ \textcolor{stringliteral}{"{}datetime2"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ UserId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false}),}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BoardGameId\ =\ table.Column<\textcolor{keywordtype}{int}>(type:\ \textcolor{stringliteral}{"{}int"{}},\ nullable:\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constraints:\ table\ =>}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.PrimaryKey(\textcolor{stringliteral}{"{}PK\_Transactions"{}},\ x\ =>\ x.Id);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_Transactions\_BoardGames\_BoardGameId"{}},}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.BoardGameId,}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table.ForeignKey(}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}FK\_Transactions\_Users\_UserId"{}},}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ x\ =>\ x.UserId,}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalTable:\ \textcolor{stringliteral}{"{}Users"{}},}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ principalColumn:\ \textcolor{stringliteral}{"{}Id"{}},}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onDelete:\ ReferentialAction.Cascade);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.InsertData(}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ columns:\ \textcolor{keyword}{new}[]\ \{\ \textcolor{stringliteral}{"{}Id"{}},\ \textcolor{stringliteral}{"{}Name"{}},\ \textcolor{stringliteral}{"{}Number\_of\_players"{}},\ \textcolor{stringliteral}{"{}UserId"{}},\ \textcolor{stringliteral}{"{}availability"{}}\ \},}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ values:\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{object}[,]}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ 1,\ \textcolor{stringliteral}{"{}Brzdek\ nie\ draznij\ smoka"{}},\ 4,\ \textcolor{keyword}{null},\ \textcolor{keyword}{null}\ \},}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ 2,\ \textcolor{stringliteral}{"{}Everdell"{}},\ 4,\ \textcolor{keyword}{null},\ \textcolor{keyword}{null}\ \},}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\ 3,\ \textcolor{stringliteral}{"{}Nemesis"{}},\ 5,\ \textcolor{keyword}{null},\ \textcolor{keyword}{null}\ \}}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_Adresses\_UserId"{}},}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}Adresses"{}},}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}UserId"{}},}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unique:\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_BoardGameComments\_BoardGameId"{}},}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}BoardGameComments"{}},}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}BoardGameId"{}});}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_BoardGameComments\_UserId"{}},}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}BoardGameComments"{}},}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_BoardGames\_UserId"{}},}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}BoardGames"{}},}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_BoardGameTag\_TagsId"{}},}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}BoardGameTag"{}},}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}TagsId"{}});}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_Transactions\_BoardGameId"{}},}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}Transactions"{}},}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}BoardGameId"{}});}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.CreateIndex(}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}IX\_Transactions\_UserId"{}},}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ table:\ \textcolor{stringliteral}{"{}Transactions"{}},}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column:\ \textcolor{stringliteral}{"{}UserId"{}});}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

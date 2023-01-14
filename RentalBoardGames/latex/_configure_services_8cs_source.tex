@@ -1,0 +1,30 @@
+\hypertarget{_configure_services_8cs_source}{}\doxysection{Configure\+Services.\+cs}
+\label{_configure_services_8cs_source}\index{RentalBoardGames/ConfigureServices.cs@{RentalBoardGames/ConfigureServices.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00001}\mbox{\hyperlink{namespace_rental_board_games}{00001}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rental_board_games}{RentalBoardGames}};}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00007}\mbox{\hyperlink{class_rental_board_games_1_1_configure_services}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_rental_board_games_1_1_configure_services}{ConfigureServices}}\ \{}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00009}00009\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ ConfigureService(IServiceCollection\ services)}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00010}00010\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ services.AddCors(options\ =>}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ options.AddPolicy(}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}AllowOrigin"{}},}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder\ =>\{}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder.AllowAnyOrigin()}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyMethod()}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyHeader();}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00023}00023\ \textcolor{comment}{//\ in\ Configure}}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ Configure(IApplicationBuilder\ app)}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00025}00025\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ app.UseCors(\textcolor{stringliteral}{"{}AllowOrigin\ "{}});}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_configure_services_8cs_source_l00028}00028\ \}}
+
+\end{DoxyCode}

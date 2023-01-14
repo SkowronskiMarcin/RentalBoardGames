@@ -1,0 +1,152 @@
+\hypertarget{_program_8cs_source}{}\doxysection{Program.\+cs}
+\label{_program_8cs_source}\index{RentalBoardGames/Program.cs@{RentalBoardGames/Program.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Microsoft.AspNetCore.Http.Json;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rental_board_games_1_1_entities}{RentalBoardGames.Entities}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_rental_board_games_1_1_entities_1_1_view_models}{RentalBoardGames.Entities.ViewModels}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Text.Json.Serialization;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }Microsoft.AspNetCore.Cors;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00008}00008\ var\ builder\ =\ WebApplication.CreateBuilder(args);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00010}00010\ builder.Services.AddEndpointsApiExplorer();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00011}00011\ builder.Services.AddSwaggerGen();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00012}00012\ builder.Services.AddControllers();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00014}00014\ builder.Services.AddCors(options\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00016}00016\ \ \ \ \ options.AddPolicy(\textcolor{stringliteral}{"{}devCorsPolicy"{}},\ builder\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ builder.WithOrigins(\textcolor{stringliteral}{"{}http://localhost:4200"{}}).AllowAnyMethod().AllowAnyHeader();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00019}00019\ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00020}00020\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00022}00022\ \textcolor{comment}{//Dzieki\ tej\ linijce\ ignorujemy\ petle}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00023}00023\ builder.Services.Configure<JsonOptions>(options\ =>\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00024}00024\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00025}00025\ \ \ \ \ options.SerializerOptions.ReferenceHandler\ =\ ReferenceHandler.IgnoreCycles;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00027}00027\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00029}00029\ builder.Services.AddDbContext<\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}>(}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00030}00030\ \ \ \ \ option\ =>\ option.UseSqlServer(builder.Configuration.GetConnectionString(\textcolor{stringliteral}{"{}MyBoardsConnectionString"{}}))}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00031}00031\ \ \ \ \ );}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00033}00033\ var\ app\ =\ builder.Build();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00035}00035\ \textcolor{comment}{//\ Configure\ the\ HTTP\ request\ pipeline.}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00036}00036\ \textcolor{keywordflow}{if}\ (app.Environment.IsDevelopment())}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00037}00037\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00038}00038\ \ \ \ \ app.UseSwagger();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00039}00039\ \ \ \ \ app.UseSwaggerUI();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00040}00040\ \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00042}00042\ \textcolor{comment}{//Widoki\ =========================================================================================}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00045}00045\ app.MapGet(\textcolor{stringliteral}{"{}View\_TopAuthors"{}},\ (\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00046}00046\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00047}00047\ \ \ \ \ var\ topAuthors\ =\ db.ViewTopAuthors.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00048}00048\ \ \ \ \ \textcolor{keywordflow}{return}\ topAuthors;\ \ \ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00049}00049\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00051}00051\ \textcolor{comment}{//\ Zwraca\ gry\ i\ iloœæ ich\ komentarzy}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00052}00052\ app.MapGet(\textcolor{stringliteral}{"{}View\_MostComments"{}},\ (\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00053}00053\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00054}00054\ \ \ \ \ var\ MostComments\ =\ db.ViewMostComments.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{return}\ MostComments;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00056}00056\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00057}00057\ \textcolor{comment}{//\ Zwraca\ niedostêpne\ gry}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00058}00058\ app.MapGet(\textcolor{stringliteral}{"{}View\_NotAvailableGames"{}},\ (\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00059}00059\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00060}00060\ \ \ \ \ var\ NotAvailableGames\ =\ db.ViewNotAvailableGames.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{return}\ NotAvailableGames;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00062}00062\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00063}00063\ \textcolor{comment}{//\ Zwraca\ Tagi\ i\ przyporz¹dkowane\ im\ gry}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00064}00064\ app.MapGet(\textcolor{stringliteral}{"{}View\_TagGames"{}},\ (\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00065}00065\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00066}00066\ \ \ \ \ var\ TagGames\ =\ db.ViewTagGames.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00067}00067\ \ \ \ \ \textcolor{keywordflow}{return}\ TagGames;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00068}00068\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00069}00069\ \textcolor{comment}{//\ Zwraca\ U¿ytkowników i\ ich\ adresy}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00070}00070\ app.MapGet(\textcolor{stringliteral}{"{}View\_UsersAdres"{}},\ (\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00071}00071\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00072}00072\ \ \ \ \ var\ UsersAdress\ =\ db.ViewUsersAdress.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{return}\ UsersAdress;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00074}00074\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00076}00076\ \textcolor{comment}{//Endpointy\ =========================================================================================}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00078}00078\ \textcolor{comment}{//Get\ gry\ dane\ tylko\ z\ tabeli\ boardgames}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00080}00080\ app.MapGet(\textcolor{stringliteral}{"{}Games"{}},\ (\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00081}00081\ \{\ \ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00082}00082\ \ \ \ \ var\ boardGames\ =\ db.BoardGames.ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{return}\ boardGames;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00084}00084\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00086}00086\ \textcolor{comment}{//Get\ [z\ ID]\ Danej\ gry\ +\ jej\ tagi\ +\ Komentarze}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00087}00087\ app.MapGet(\textcolor{stringliteral}{"{}/GamesCommentsTags/\{id\}"{}},\ (\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00088}00088\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00089}00089\ \ \ \ \ var\ boardGame\ =\ db.BoardGames}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00090}00090\ \ \ \ \ .Include(u\ =>\ u.Comments)}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00091}00091\ \ \ \ \ .Include(h\ =>\ h.Tags)}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00092}00092\ \ \ \ \ .First(u\ =>\ u.Id\ ==\ \textcolor{keywordtype}{id});\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00093}00093\ \ \ \ \ \textcolor{keywordflow}{return}\ boardGame;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00094}00094\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00096}00096\ \textcolor{comment}{//Update\ [Gry\ o\ ID]\ Dostêpnoœæ gry\ planszowej}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00097}00097\ app.MapPut(\textcolor{stringliteral}{"{}/ChangeAvailability/\{id\}"{}},\ (\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00098}00098\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00099}00099\ \ \ \ \ var\ boardGame\ =\ db.BoardGames.First(u\ =>\ u.Id\ ==\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00100}00100\ \ \ \ \ if\ (boardGame.availability\ ==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ boardGame.availability\ =\ false;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00102}00102\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00103}00103\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ boardGame.availability\ =\ true;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00105}00105\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00107}00107\ \ \ \ \ db.SaveChanges();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00108}00108\ \ \ \ \ \textcolor{keywordflow}{return}\ boardGame;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00109}00109\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00111}00111\ \textcolor{comment}{//Post\ []\ Na\ dodanie\ gry\ planszowej}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00112}00112\ app.MapPost(\textcolor{stringliteral}{"{}/CreateGame/\{Name\}/\{Number\_of\_players\}"{}},\ (\textcolor{keywordtype}{string}\ Name,\ \textcolor{keywordtype}{int}\ Number\_of\_players,\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00113}00113\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{BoardGame}}\ boardGame\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{BoardGame}}()}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ Name\ =\ Name,}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ Number\_of\_players\ =\ Number\_of\_players,}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ availability\ =\ \textcolor{keyword}{true}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00119}00119\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00120}00120\ \ \ \ \ db.Add(boardGame);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00121}00121\ \ \ \ \ db.SaveChanges();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00122}00122\ \ \ \ \ \textcolor{keywordflow}{return}\ boardGame;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00123}00123\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00125}00125\ \textcolor{comment}{//Delete[Gry\ o\ ID]\ Gra}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00126}00126\ app.MapDelete(\textcolor{stringliteral}{"{}/DeleteGame/\{id\}"{}},(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00127}00127\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00128}00128\ \ \ \ \ var\ boardGame\ =\ db.BoardGames.First(u\ =>\ u.Id\ ==\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00129}00129\ \ \ \ \ var\ comments\ =\ db.BoardGameComments.Where(u\ =>\ u.BoardGameId\ ==\ \textcolor{keywordtype}{id}).ToList();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00131}00131\ \ \ \ \ db.RemoveRange(comments);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00132}00132\ \ \ \ \ db.Remove(boardGame);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00133}00133\ \ \ \ \ db.SaveChanges();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00135}00135\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00137}00137\ \textcolor{comment}{//Delete\ [Po\ ID\ komentarza]\ Komentarz}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00138}00138\ app.MapDelete(\textcolor{stringliteral}{"{}/DeleteComment/\{id\}"{}},\ (\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{MyBoardsContext}}\ db)\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00139}00139\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00140}00140\ \ \ \ \ var\ comment\ =\ db.BoardGameComments.First(u\ =>\ u.Id\ ==\ \textcolor{keywordtype}{id});\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00141}00141\ \ \ \ \ db.Remove(comment);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00142}00142\ \ \ \ \ db.SaveChanges();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00143}00143\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00145}00145\ app.Run();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00146}00146\ }
+
+\end{DoxyCode}

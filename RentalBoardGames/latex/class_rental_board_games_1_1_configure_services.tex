@@ -8,11 +8,9 @@ Konfiguracja serwisu odpowiadająca za usunięcie cors.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_rental_board_games_1_1_configure_services_ae891c906933f16def637d2db8710f6fa}\label{class_rental_board_games_1_1_configure_services_ae891c906933f16def637d2db8710f6fa}} 
-void {\bfseries Configure\+Service} (IService\+Collection services)
+void \mbox{\hyperlink{class_rental_board_games_1_1_configure_services_ae891c906933f16def637d2db8710f6fa}{Configure\+Service}} (IService\+Collection services)
 \item 
-\mbox{\Hypertarget{class_rental_board_games_1_1_configure_services_a97e1d092438217a1a9f4aaf5f74fd801}\label{class_rental_board_games_1_1_configure_services_a97e1d092438217a1a9f4aaf5f74fd801}} 
-void {\bfseries Configure} (IApplication\+Builder app)
+void \mbox{\hyperlink{class_rental_board_games_1_1_configure_services_a97e1d092438217a1a9f4aaf5f74fd801}{Configure}} (IApplication\+Builder app)
 \end{DoxyCompactItemize}
 
 
@@ -24,6 +22,56 @@ Konfiguracja serwisu odpowiadająca za usunięcie cors.
 {\em services} & \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_configure_services_8cs_source_l00007}{7}} of file \mbox{\hyperlink{_configure_services_8cs_source}{Configure\+Services.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rental_board_games_1_1_configure_services_a97e1d092438217a1a9f4aaf5f74fd801}\label{class_rental_board_games_1_1_configure_services_a97e1d092438217a1a9f4aaf5f74fd801}} 
+\index{RentalBoardGames.ConfigureServices@{RentalBoardGames.ConfigureServices}!Configure@{Configure}}
+\index{Configure@{Configure}!RentalBoardGames.ConfigureServices@{RentalBoardGames.ConfigureServices}}
+\doxysubsubsection{\texorpdfstring{Configure()}{Configure()}}
+{\footnotesize\ttfamily void Rental\+Board\+Games.\+Configure\+Services.\+Configure (\begin{DoxyParamCaption}\item[{IApplication\+Builder}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_configure_services_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_configure_services_8cs_source}{Configure\+Services.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ app.UseCors(\textcolor{stringliteral}{"{}AllowOrigin\ "{}});}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_rental_board_games_1_1_configure_services_ae891c906933f16def637d2db8710f6fa}\label{class_rental_board_games_1_1_configure_services_ae891c906933f16def637d2db8710f6fa}} 
+\index{RentalBoardGames.ConfigureServices@{RentalBoardGames.ConfigureServices}!ConfigureService@{ConfigureService}}
+\index{ConfigureService@{ConfigureService}!RentalBoardGames.ConfigureServices@{RentalBoardGames.ConfigureServices}}
+\doxysubsubsection{\texorpdfstring{ConfigureService()}{ConfigureService()}}
+{\footnotesize\ttfamily void Rental\+Board\+Games.\+Configure\+Services.\+Configure\+Service (\begin{DoxyParamCaption}\item[{IService\+Collection}]{services }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_configure_services_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_configure_services_8cs_source}{Configure\+Services.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ services.AddCors(options\ =>}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ options.AddPolicy(}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ name:\ \textcolor{stringliteral}{"{}AllowOrigin"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder\ =>\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ builder.AllowAnyOrigin()}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyMethod()}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyHeader();}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

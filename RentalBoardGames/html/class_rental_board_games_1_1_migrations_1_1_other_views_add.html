@@ -74,19 +74,535 @@ Inheritance diagram for RentalBoardGames.Migrations.OtherViewsAdd:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3f110a657dc7d3d205217f8fa93b83d7"><td class="memItemLeft" align="right" valign="top"><a id="a3f110a657dc7d3d205217f8fa93b83d7" name="a3f110a657dc7d3d205217f8fa93b83d7"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>Up</b> (MigrationBuilder migrationBuilder)</td></tr>
+<tr class="memitem:a3f110a657dc7d3d205217f8fa93b83d7"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rental_board_games_1_1_migrations_1_1_other_views_add.html#a3f110a657dc7d3d205217f8fa93b83d7">Up</a> (MigrationBuilder migrationBuilder)</td></tr>
 <tr class="separator:a3f110a657dc7d3d205217f8fa93b83d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a729951b1b38adb5856daba84266c6c3f"><td class="memItemLeft" align="right" valign="top"><a id="a729951b1b38adb5856daba84266c6c3f" name="a729951b1b38adb5856daba84266c6c3f"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>Down</b> (MigrationBuilder migrationBuilder)</td></tr>
+<tr class="memitem:a729951b1b38adb5856daba84266c6c3f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rental_board_games_1_1_migrations_1_1_other_views_add.html#a729951b1b38adb5856daba84266c6c3f">Down</a> (MigrationBuilder migrationBuilder)</td></tr>
 <tr class="separator:a729951b1b38adb5856daba84266c6c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d2807c3a75586f83f8602533bbf8a9"><td class="memItemLeft" align="right" valign="top"><a id="a61d2807c3a75586f83f8602533bbf8a9" name="a61d2807c3a75586f83f8602533bbf8a9"></a>
-override void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildTargetModel</b> (ModelBuilder modelBuilder)</td></tr>
+<tr class="memitem:a61d2807c3a75586f83f8602533bbf8a9"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rental_board_games_1_1_migrations_1_1_other_views_add.html#a61d2807c3a75586f83f8602533bbf8a9">BuildTargetModel</a> (ModelBuilder modelBuilder)</td></tr>
 <tr class="separator:a61d2807c3a75586f83f8602533bbf8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="20230111195401___other_views_add_8cs_source.html#l00008">8</a> of file <a class="el" href="20230111195401___other_views_add_8cs_source.html">20230111195401_OtherViewsAdd.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a61d2807c3a75586f83f8602533bbf8a9" name="a61d2807c3a75586f83f8602533bbf8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d2807c3a75586f83f8602533bbf8a9">&#9670;&#160;</a></span>BuildTargetModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RentalBoardGames.Migrations.OtherViewsAdd.BuildTargetModel </td>
+          <td>(</td>
+          <td class="paramtype">ModelBuilder&#160;</td>
+          <td class="paramname"><em>modelBuilder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+<p class="definition">Definition at line <a class="el" href="20230111195401___other_views_add_8_designer_8cs_source.html#l00019">19</a> of file <a class="el" href="20230111195401___other_views_add_8_designer_8cs_source.html">20230111195401_OtherViewsAdd.Designer.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>        {</div>
+<div class="line"><span class="lineno">   21</span><span class="preprocessor">#pragma warning disable 612, 618</span></div>
+<div class="line"><span class="lineno">   22</span>            modelBuilder</div>
+<div class="line"><span class="lineno">   23</span>                .HasAnnotation(<span class="stringliteral">&quot;ProductVersion&quot;</span>, <span class="stringliteral">&quot;7.0.1&quot;</span>)</div>
+<div class="line"><span class="lineno">   24</span>                .HasAnnotation(<span class="stringliteral">&quot;Relational:MaxIdentifierLength&quot;</span>, 128);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>            modelBuilder.Entity(<span class="stringliteral">&quot;BoardGameTag&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">   29</span>                {</div>
+<div class="line"><span class="lineno">   30</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;BoardGamesId&quot;</span>)</div>
+<div class="line"><span class="lineno">   31</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;TagsId&quot;</span>)</div>
+<div class="line"><span class="lineno">   34</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>                    b.HasKey(<span class="stringliteral">&quot;BoardGamesId&quot;</span>, <span class="stringliteral">&quot;TagsId&quot;</span>);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>                    b.HasIndex(<span class="stringliteral">&quot;TagsId&quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>                    b.ToTable(<span class="stringliteral">&quot;BoardGameTag&quot;</span>);</div>
+<div class="line"><span class="lineno">   41</span>                });</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.Adress&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">   44</span>                {</div>
+<div class="line"><span class="lineno">   45</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">   46</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">   47</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;City&quot;</span>)</div>
+<div class="line"><span class="lineno">   52</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Coutry&quot;</span>)</div>
+<div class="line"><span class="lineno">   55</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;PostalCode&quot;</span>)</div>
+<div class="line"><span class="lineno">   58</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Street&quot;</span>)</div>
+<div class="line"><span class="lineno">   61</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">   64</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>                    b.HasIndex(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">   69</span>                        .IsUnique();</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>                    b.ToTable(<span class="stringliteral">&quot;Adresses&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>                    b.HasData(</div>
+<div class="line"><span class="lineno">   74</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">   75</span>                        {</div>
+<div class="line"><span class="lineno">   76</span>                            Id = 1,</div>
+<div class="line"><span class="lineno">   77</span>                            City = <span class="stringliteral">&quot;Jabłonna&quot;</span>,</div>
+<div class="line"><span class="lineno">   78</span>                            UserId = 1</div>
+<div class="line"><span class="lineno">   79</span>                        },</div>
+<div class="line"><span class="lineno">   80</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">   81</span>                        {</div>
+<div class="line"><span class="lineno">   82</span>                            Id = 2,</div>
+<div class="line"><span class="lineno">   83</span>                            City = <span class="stringliteral">&quot;Pruszków&quot;</span>,</div>
+<div class="line"><span class="lineno">   84</span>                            UserId = 2</div>
+<div class="line"><span class="lineno">   85</span>                        },</div>
+<div class="line"><span class="lineno">   86</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">   87</span>                        {</div>
+<div class="line"><span class="lineno">   88</span>                            Id = 3,</div>
+<div class="line"><span class="lineno">   89</span>                            City = <span class="stringliteral">&quot;Warszawa&quot;</span>,</div>
+<div class="line"><span class="lineno">   90</span>                            UserId = 3</div>
+<div class="line"><span class="lineno">   91</span>                        });</div>
+<div class="line"><span class="lineno">   92</span>                });</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">   95</span>                {</div>
+<div class="line"><span class="lineno">   96</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">   97</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">   98</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Name&quot;</span>)</div>
+<div class="line"><span class="lineno">  103</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Number_of_players&quot;</span>)</div>
+<div class="line"><span class="lineno">  106</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>                    b.Property&lt;<span class="keywordtype">int</span>?&gt;(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  109</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>                    b.Property&lt;<span class="keywordtype">bool</span>?&gt;(<span class="stringliteral">&quot;availability&quot;</span>)</div>
+<div class="line"><span class="lineno">  112</span>                        .HasColumnType(<span class="stringliteral">&quot;bit&quot;</span>);</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>                    b.HasIndex(<span class="stringliteral">&quot;UserId&quot;</span>);</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>                    b.ToTable(<span class="stringliteral">&quot;BoardGames&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>                    b.HasData(</div>
+<div class="line"><span class="lineno">  121</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  122</span>                        {</div>
+<div class="line"><span class="lineno">  123</span>                            Id = 1,</div>
+<div class="line"><span class="lineno">  124</span>                            Name = <span class="stringliteral">&quot;Brzdek nie draznij smoka&quot;</span>,</div>
+<div class="line"><span class="lineno">  125</span>                            Numberofplayers = 4</div>
+<div class="line"><span class="lineno">  126</span>                        },</div>
+<div class="line"><span class="lineno">  127</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  128</span>                        {</div>
+<div class="line"><span class="lineno">  129</span>                            Id = 2,</div>
+<div class="line"><span class="lineno">  130</span>                            Name = <span class="stringliteral">&quot;Everdell&quot;</span>,</div>
+<div class="line"><span class="lineno">  131</span>                            Numberofplayers = 4</div>
+<div class="line"><span class="lineno">  132</span>                        },</div>
+<div class="line"><span class="lineno">  133</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  134</span>                        {</div>
+<div class="line"><span class="lineno">  135</span>                            Id = 3,</div>
+<div class="line"><span class="lineno">  136</span>                            Name = <span class="stringliteral">&quot;Nemesis&quot;</span>,</div>
+<div class="line"><span class="lineno">  137</span>                            Numberofplayers = 5</div>
+<div class="line"><span class="lineno">  138</span>                        });</div>
+<div class="line"><span class="lineno">  139</span>                });</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGameComment&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  142</span>                {</div>
+<div class="line"><span class="lineno">  143</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">  144</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  145</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Author&quot;</span>)</div>
+<div class="line"><span class="lineno">  150</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;BoardGameId&quot;</span>)</div>
+<div class="line"><span class="lineno">  153</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>                    b.Property&lt;DateTime&gt;(<span class="stringliteral">&quot;CreatedDate&quot;</span>)</div>
+<div class="line"><span class="lineno">  156</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  157</span>                        .HasColumnType(<span class="stringliteral">&quot;datetime2&quot;</span>)</div>
+<div class="line"><span class="lineno">  158</span>                        .HasDefaultValueSql(<span class="stringliteral">&quot;getutcdate()&quot;</span>);</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Message&quot;</span>)</div>
+<div class="line"><span class="lineno">  161</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>                    b.Property&lt;DateTime?&gt;(<span class="stringliteral">&quot;UpdatedDate&quot;</span>)</div>
+<div class="line"><span class="lineno">  164</span>                        .ValueGeneratedOnUpdate()</div>
+<div class="line"><span class="lineno">  165</span>                        .HasColumnType(<span class="stringliteral">&quot;datetime2&quot;</span>);</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  168</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>                    b.HasIndex(<span class="stringliteral">&quot;BoardGameId&quot;</span>);</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>                    b.HasIndex(<span class="stringliteral">&quot;UserId&quot;</span>);</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>                    b.ToTable(<span class="stringliteral">&quot;BoardGameComments&quot;</span>);</div>
+<div class="line"><span class="lineno">  177</span>                });</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.Tag&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  180</span>                {</div>
+<div class="line"><span class="lineno">  181</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">  182</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  183</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Value&quot;</span>)</div>
+<div class="line"><span class="lineno">  188</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>                    b.ToTable(<span class="stringliteral">&quot;Tags&quot;</span>);</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>                    b.HasData(</div>
+<div class="line"><span class="lineno">  195</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  196</span>                        {</div>
+<div class="line"><span class="lineno">  197</span>                            Id = 1,</div>
+<div class="line"><span class="lineno">  198</span>                            Value = <span class="stringliteral">&quot;Horror&quot;</span></div>
+<div class="line"><span class="lineno">  199</span>                        },</div>
+<div class="line"><span class="lineno">  200</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  201</span>                        {</div>
+<div class="line"><span class="lineno">  202</span>                            Id = 2,</div>
+<div class="line"><span class="lineno">  203</span>                            Value = <span class="stringliteral">&quot;Fantasy&quot;</span></div>
+<div class="line"><span class="lineno">  204</span>                        },</div>
+<div class="line"><span class="lineno">  205</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  206</span>                        {</div>
+<div class="line"><span class="lineno">  207</span>                            Id = 3,</div>
+<div class="line"><span class="lineno">  208</span>                            Value = <span class="stringliteral">&quot;Semi-coop&quot;</span></div>
+<div class="line"><span class="lineno">  209</span>                        },</div>
+<div class="line"><span class="lineno">  210</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  211</span>                        {</div>
+<div class="line"><span class="lineno">  212</span>                            Id = 4,</div>
+<div class="line"><span class="lineno">  213</span>                            Value = <span class="stringliteral">&quot;Euro&quot;</span></div>
+<div class="line"><span class="lineno">  214</span>                        });</div>
+<div class="line"><span class="lineno">  215</span>                });</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.Transaction&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  218</span>                {</div>
+<div class="line"><span class="lineno">  219</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">  220</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  221</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;BoardGameId&quot;</span>)</div>
+<div class="line"><span class="lineno">  226</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  227</span> </div>
+<div class="line"><span class="lineno">  228</span>                    b.Property&lt;DateTime&gt;(<span class="stringliteral">&quot;CreatedDate&quot;</span>)</div>
+<div class="line"><span class="lineno">  229</span>                        .HasColumnType(<span class="stringliteral">&quot;datetime2&quot;</span>);</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>                    b.Property&lt;DateTime&gt;(<span class="stringliteral">&quot;Deadline&quot;</span>)</div>
+<div class="line"><span class="lineno">  232</span>                        .HasColumnType(<span class="stringliteral">&quot;datetime2&quot;</span>);</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  235</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  239</span>                    b.HasIndex(<span class="stringliteral">&quot;BoardGameId&quot;</span>);</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>                    b.HasIndex(<span class="stringliteral">&quot;UserId&quot;</span>);</div>
+<div class="line"><span class="lineno">  242</span> </div>
+<div class="line"><span class="lineno">  243</span>                    b.ToTable(<span class="stringliteral">&quot;Transactions&quot;</span>);</div>
+<div class="line"><span class="lineno">  244</span>                });</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  247</span>                {</div>
+<div class="line"><span class="lineno">  248</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>)</div>
+<div class="line"><span class="lineno">  249</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  250</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;Id&quot;</span>));</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;Email&quot;</span>)</div>
+<div class="line"><span class="lineno">  255</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  256</span> </div>
+<div class="line"><span class="lineno">  257</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;FirstName&quot;</span>)</div>
+<div class="line"><span class="lineno">  258</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;LastName&quot;</span>)</div>
+<div class="line"><span class="lineno">  261</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;UserType&quot;</span>)</div>
+<div class="line"><span class="lineno">  264</span>                        .ValueGeneratedOnAdd()</div>
+<div class="line"><span class="lineno">  265</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>)</div>
+<div class="line"><span class="lineno">  266</span>                        .HasDefaultValue(1);</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>                    b.HasKey(<span class="stringliteral">&quot;Id&quot;</span>);</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>                    b.ToTable(<span class="stringliteral">&quot;Users&quot;</span>);</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>                    b.HasData(</div>
+<div class="line"><span class="lineno">  273</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  274</span>                        {</div>
+<div class="line"><span class="lineno">  275</span>                            Id = 1,</div>
+<div class="line"><span class="lineno">  276</span>                            Email = <span class="stringliteral">&quot;dsds@wp.pl&quot;</span>,</div>
+<div class="line"><span class="lineno">  277</span>                            FirstName = <span class="stringliteral">&quot;Marcin&quot;</span>,</div>
+<div class="line"><span class="lineno">  278</span>                            LastName = <span class="stringliteral">&quot;Skowroński&quot;</span>,</div>
+<div class="line"><span class="lineno">  279</span>                            UserType = 0</div>
+<div class="line"><span class="lineno">  280</span>                        },</div>
+<div class="line"><span class="lineno">  281</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  282</span>                        {</div>
+<div class="line"><span class="lineno">  283</span>                            Id = 2,</div>
+<div class="line"><span class="lineno">  284</span>                            Email = <span class="stringliteral">&quot;mateusz@wp.pl&quot;</span>,</div>
+<div class="line"><span class="lineno">  285</span>                            FirstName = <span class="stringliteral">&quot;Mateusz&quot;</span>,</div>
+<div class="line"><span class="lineno">  286</span>                            LastName = <span class="stringliteral">&quot;Polak&quot;</span>,</div>
+<div class="line"><span class="lineno">  287</span>                            UserType = 0</div>
+<div class="line"><span class="lineno">  288</span>                        },</div>
+<div class="line"><span class="lineno">  289</span>                        <span class="keyword">new</span></div>
+<div class="line"><span class="lineno">  290</span>                        {</div>
+<div class="line"><span class="lineno">  291</span>                            Id = 3,</div>
+<div class="line"><span class="lineno">  292</span>                            Email = <span class="stringliteral">&quot;Kamil@wp.pl&quot;</span>,</div>
+<div class="line"><span class="lineno">  293</span>                            FirstName = <span class="stringliteral">&quot;Kamil&quot;</span>,</div>
+<div class="line"><span class="lineno">  294</span>                            LastName = <span class="stringliteral">&quot;Chmielewski&quot;</span>,</div>
+<div class="line"><span class="lineno">  295</span>                            UserType = 0</div>
+<div class="line"><span class="lineno">  296</span>                        });</div>
+<div class="line"><span class="lineno">  297</span>                });</div>
+<div class="line"><span class="lineno">  298</span> </div>
+<div class="line"><span class="lineno">  299</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.ViewModels.TopAuthor&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  300</span>                {</div>
+<div class="line"><span class="lineno">  301</span>                    b.Property&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;CommentsCreated&quot;</span>)</div>
+<div class="line"><span class="lineno">  302</span>                        .HasColumnType(<span class="stringliteral">&quot;int&quot;</span>);</div>
+<div class="line"><span class="lineno">  303</span> </div>
+<div class="line"><span class="lineno">  304</span>                    b.Property&lt;<span class="keywordtype">string</span>&gt;(<span class="stringliteral">&quot;FullName&quot;</span>)</div>
+<div class="line"><span class="lineno">  305</span>                        .HasColumnType(<span class="stringliteral">&quot;nvarchar(max)&quot;</span>);</div>
+<div class="line"><span class="lineno">  306</span> </div>
+<div class="line"><span class="lineno">  307</span>                    b.ToTable((<span class="keywordtype">string</span>)<span class="keyword">null</span>);</div>
+<div class="line"><span class="lineno">  308</span> </div>
+<div class="line"><span class="lineno">  309</span>                    b.ToView(<span class="stringliteral">&quot;View_TopAuthors&quot;</span>, (<span class="keywordtype">string</span>)<span class="keyword">null</span>);</div>
+<div class="line"><span class="lineno">  310</span>                });</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>            modelBuilder.Entity(<span class="stringliteral">&quot;BoardGameTag&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  313</span>                {</div>
+<div class="line"><span class="lineno">  314</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  315</span>                        .WithMany()</div>
+<div class="line"><span class="lineno">  316</span>                        .HasForeignKey(<span class="stringliteral">&quot;BoardGamesId&quot;</span>)</div>
+<div class="line"><span class="lineno">  317</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  318</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.Tag&quot;</span>, <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  321</span>                        .WithMany()</div>
+<div class="line"><span class="lineno">  322</span>                        .HasForeignKey(<span class="stringliteral">&quot;TagsId&quot;</span>)</div>
+<div class="line"><span class="lineno">  323</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  324</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  325</span>                });</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.Adress&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  328</span>                {</div>
+<div class="line"><span class="lineno">  329</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, <span class="stringliteral">&quot;User&quot;</span>)</div>
+<div class="line"><span class="lineno">  330</span>                        .WithOne(<span class="stringliteral">&quot;Adress&quot;</span>)</div>
+<div class="line"><span class="lineno">  331</span>                        .HasForeignKey(<span class="stringliteral">&quot;RentalBoardGames.Entities.Adress&quot;</span>, <span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  332</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  333</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>                    b.Navigation(<span class="stringliteral">&quot;User&quot;</span>);</div>
+<div class="line"><span class="lineno">  336</span>                });</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  339</span>                {</div>
+<div class="line"><span class="lineno">  340</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  341</span>                        .WithMany(<span class="stringliteral">&quot;Rented_Games&quot;</span>)</div>
+<div class="line"><span class="lineno">  342</span>                        .HasForeignKey(<span class="stringliteral">&quot;UserId&quot;</span>);</div>
+<div class="line"><span class="lineno">  343</span>                });</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGameComment&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  346</span>                {</div>
+<div class="line"><span class="lineno">  347</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, <span class="stringliteral">&quot;BoardGame&quot;</span>)</div>
+<div class="line"><span class="lineno">  348</span>                        .WithMany(<span class="stringliteral">&quot;Comments&quot;</span>)</div>
+<div class="line"><span class="lineno">  349</span>                        .HasForeignKey(<span class="stringliteral">&quot;BoardGameId&quot;</span>)</div>
+<div class="line"><span class="lineno">  350</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  351</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, <span class="stringliteral">&quot;User&quot;</span>)</div>
+<div class="line"><span class="lineno">  354</span>                        .WithMany(<span class="stringliteral">&quot;Comments&quot;</span>)</div>
+<div class="line"><span class="lineno">  355</span>                        .HasForeignKey(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  356</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  357</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>                    b.Navigation(<span class="stringliteral">&quot;BoardGame&quot;</span>);</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>                    b.Navigation(<span class="stringliteral">&quot;User&quot;</span>);</div>
+<div class="line"><span class="lineno">  362</span>                });</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.Transaction&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  365</span>                {</div>
+<div class="line"><span class="lineno">  366</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, <span class="stringliteral">&quot;BoardGame&quot;</span>)</div>
+<div class="line"><span class="lineno">  367</span>                        .WithMany(<span class="stringliteral">&quot;Transactions&quot;</span>)</div>
+<div class="line"><span class="lineno">  368</span>                        .HasForeignKey(<span class="stringliteral">&quot;BoardGameId&quot;</span>)</div>
+<div class="line"><span class="lineno">  369</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  370</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>                    b.HasOne(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, <span class="stringliteral">&quot;User&quot;</span>)</div>
+<div class="line"><span class="lineno">  373</span>                        .WithMany(<span class="stringliteral">&quot;Transactions&quot;</span>)</div>
+<div class="line"><span class="lineno">  374</span>                        .HasForeignKey(<span class="stringliteral">&quot;UserId&quot;</span>)</div>
+<div class="line"><span class="lineno">  375</span>                        .OnDelete(DeleteBehavior.Cascade)</div>
+<div class="line"><span class="lineno">  376</span>                        .IsRequired();</div>
+<div class="line"><span class="lineno">  377</span> </div>
+<div class="line"><span class="lineno">  378</span>                    b.Navigation(<span class="stringliteral">&quot;BoardGame&quot;</span>);</div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>                    b.Navigation(<span class="stringliteral">&quot;User&quot;</span>);</div>
+<div class="line"><span class="lineno">  381</span>                });</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.BoardGame&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  384</span>                {</div>
+<div class="line"><span class="lineno">  385</span>                    b.Navigation(<span class="stringliteral">&quot;Comments&quot;</span>);</div>
+<div class="line"><span class="lineno">  386</span> </div>
+<div class="line"><span class="lineno">  387</span>                    b.Navigation(<span class="stringliteral">&quot;Transactions&quot;</span>);</div>
+<div class="line"><span class="lineno">  388</span>                });</div>
+<div class="line"><span class="lineno">  389</span> </div>
+<div class="line"><span class="lineno">  390</span>            modelBuilder.Entity(<span class="stringliteral">&quot;RentalBoardGames.Entities.User&quot;</span>, b =&gt;</div>
+<div class="line"><span class="lineno">  391</span>                {</div>
+<div class="line"><span class="lineno">  392</span>                    b.Navigation(<span class="stringliteral">&quot;Adress&quot;</span>);</div>
+<div class="line"><span class="lineno">  393</span> </div>
+<div class="line"><span class="lineno">  394</span>                    b.Navigation(<span class="stringliteral">&quot;Comments&quot;</span>);</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>                    b.Navigation(<span class="stringliteral">&quot;Rented_Games&quot;</span>);</div>
+<div class="line"><span class="lineno">  397</span> </div>
+<div class="line"><span class="lineno">  398</span>                    b.Navigation(<span class="stringliteral">&quot;Transactions&quot;</span>);</div>
+<div class="line"><span class="lineno">  399</span>                });</div>
+<div class="line"><span class="lineno">  400</span><span class="preprocessor">#pragma warning restore 612, 618</span></div>
+<div class="line"><span class="lineno">  401</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a729951b1b38adb5856daba84266c6c3f" name="a729951b1b38adb5856daba84266c6c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729951b1b38adb5856daba84266c6c3f">&#9670;&#160;</a></span>Down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RentalBoardGames.Migrations.OtherViewsAdd.Down </td>
+          <td>(</td>
+          <td class="paramtype">MigrationBuilder&#160;</td>
+          <td class="paramname"><em>migrationBuilder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="20230111195401___other_views_add_8cs_source.html#l00045">45</a> of file <a class="el" href="20230111195401___other_views_add_8cs_source.html">20230111195401_OtherViewsAdd.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>        {</div>
+<div class="line"><span class="lineno">   47</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   48</span><span class="stringliteral">                DROP VIEW View_MostComments</span></div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   51</span><span class="stringliteral">                DROP VIEW View_NotAvailableGames</span></div>
+<div class="line"><span class="lineno">   52</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   53</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   54</span><span class="stringliteral">                DROP VIEW View_TagGames</span></div>
+<div class="line"><span class="lineno">   55</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   57</span><span class="stringliteral">                DROP VIEW View_UsersAdres</span></div>
+<div class="line"><span class="lineno">   58</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3f110a657dc7d3d205217f8fa93b83d7" name="a3f110a657dc7d3d205217f8fa93b83d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f110a657dc7d3d205217f8fa93b83d7">&#9670;&#160;</a></span>Up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RentalBoardGames.Migrations.OtherViewsAdd.Up </td>
+          <td>(</td>
+          <td class="paramtype">MigrationBuilder&#160;</td>
+          <td class="paramname"><em>migrationBuilder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="20230111195401___other_views_add_8cs_source.html#l00011">11</a> of file <a class="el" href="20230111195401___other_views_add_8cs_source.html">20230111195401_OtherViewsAdd.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>        {</div>
+<div class="line"><span class="lineno">   13</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">                CREATE VIEW View_MostComments AS</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">                SELECT u.Id,u.Name, COUNT(*) as [Comments]</span></div>
+<div class="line"><span class="lineno">   16</span><span class="stringliteral">                FROM BoardGames u</span></div>
+<div class="line"><span class="lineno">   17</span><span class="stringliteral">                Join BoardGameComments wi on wi.UserId = u.Id</span></div>
+<div class="line"><span class="lineno">   18</span><span class="stringliteral">                GROUP BY u.Id,u.Name</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   20</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">                CREATE VIEW View_NotAvailableGames AS</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">                SELECT u.Id,u.Name, wi.Deadline, CONCAT(wu.FirstName,&#39; &#39;,wu.LastName) AS [FullName]</span></div>
+<div class="line"><span class="lineno">   23</span><span class="stringliteral">                FROM BoardGames u   </span></div>
+<div class="line"><span class="lineno">   24</span><span class="stringliteral">                Join Transactions wi on wi.BoardGameId = u.Id</span></div>
+<div class="line"><span class="lineno">   25</span><span class="stringliteral">                Join Users wu on wu.Id = wi.UserId</span></div>
+<div class="line"><span class="lineno">   26</span><span class="stringliteral">                Where u.availability = 0</span></div>
+<div class="line"><span class="lineno">   27</span><span class="stringliteral">                GROUP BY u.Id,u.Name,wi.Deadline,wu.FirstName,wu.LastName</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   30</span><span class="stringliteral">                CREATE VIEW View_TagGames AS</span></div>
+<div class="line"><span class="lineno">   31</span><span class="stringliteral">                SELECT u.Value, bg.Name</span></div>
+<div class="line"><span class="lineno">   32</span><span class="stringliteral">                FROM Tags u</span></div>
+<div class="line"><span class="lineno">   33</span><span class="stringliteral">                Join BoardGameTag hu on hu.TagsId = u.Id</span></div>
+<div class="line"><span class="lineno">   34</span><span class="stringliteral">                Join BoardGames bg on bg.Id = hu.BoardGamesId</span></div>
+<div class="line"><span class="lineno">   35</span><span class="stringliteral">                Group by u.Value, bg.Name   </span></div>
+<div class="line"><span class="lineno">   36</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   37</span>            migrationBuilder.Sql(<span class="stringliteral">@&quot;</span></div>
+<div class="line"><span class="lineno">   38</span><span class="stringliteral">                CREATE VIEW View_UsersAdres AS</span></div>
+<div class="line"><span class="lineno">   39</span><span class="stringliteral">                SELECT u.Id,Concat(u.FirstName,&#39; &#39;,u.LastName)as [FullName],CONCAT(a.Street,&#39; &#39;,a.PostalCode,&#39; &#39;,a.City) as [Adress]</span></div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">                FROM Users u</span></div>
+<div class="line"><span class="lineno">   41</span><span class="stringliteral">                Join Adresses a on a.UserId = u.Id</span></div>
+<div class="line"><span class="lineno">   42</span><span class="stringliteral">                           &quot;</span>);</div>
+<div class="line"><span class="lineno">   43</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs</li>
-<li>RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.Designer.cs</li>
+<li>RentalBoardGames/Migrations/<a class="el" href="20230111195401___other_views_add_8cs_source.html">20230111195401_OtherViewsAdd.cs</a></li>
+<li>RentalBoardGames/Migrations/<a class="el" href="20230111195401___other_views_add_8_designer_8cs_source.html">20230111195401_OtherViewsAdd.Designer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

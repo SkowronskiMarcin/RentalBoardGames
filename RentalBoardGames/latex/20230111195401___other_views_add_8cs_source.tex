@@ -1,0 +1,68 @@
+\hypertarget{20230111195401___other_views_add_8cs_source}{}\doxysection{20230111195401\+\_\+\+Other\+Views\+Add.\+cs}
+\label{20230111195401___other_views_add_8cs_source}\index{RentalBoardGames/Migrations/20230111195401\_OtherViewsAdd.cs@{RentalBoardGames/Migrations/20230111195401\_OtherViewsAdd.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Migrations;}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00003}00003\ \textcolor{preprocessor}{\#nullable\ disable}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00005}00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rental_board_games_1_1_migrations}{RentalBoardGames.Migrations}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00007}00007\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00008}\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_other_views_add}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_other_views_add}{OtherViewsAdd}}\ :\ Migration}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00010}00010\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ Up(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00014}00014\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CREATE\ VIEW\ View\_MostComments\ AS}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00015}00015\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SELECT\ u.Id,u.Name,\ COUNT(*)\ as\ [Comments]}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FROM\ BoardGames\ u}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ BoardGameComments\ wi\ on\ wi.UserId\ =\ u.Id}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GROUP\ BY\ u.Id,u.Name}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00021}00021\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CREATE\ VIEW\ View\_NotAvailableGames\ AS}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SELECT\ u.Id,u.Name,\ wi.Deadline,\ CONCAT(wu.FirstName,'\ ',wu.LastName)\ AS\ [FullName]}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00023}00023\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FROM\ BoardGames\ u\ \ \ }}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00024}00024\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ Transactions\ wi\ on\ wi.BoardGameId\ =\ u.Id}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00025}00025\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ Users\ wu\ on\ wu.Id\ =\ wi.UserId}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00026}00026\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Where\ u.availability\ =\ 0}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00027}00027\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GROUP\ BY\ u.Id,u.Name,wi.Deadline,wu.FirstName,wu.LastName}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00030}00030\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CREATE\ VIEW\ View\_TagGames\ AS}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00031}00031\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SELECT\ u.Value,\ bg.Name}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00032}00032\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FROM\ Tags\ u}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ BoardGameTag\ hu\ on\ hu.TagsId\ =\ u.Id}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00034}00034\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ BoardGames\ bg\ on\ bg.Id\ =\ hu.BoardGamesId}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Group\ by\ u.Value,\ bg.Name\ \ \ }}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00038}00038\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CREATE\ VIEW\ View\_UsersAdres\ AS}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00039}00039\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SELECT\ u.Id,Concat(u.FirstName,'\ ',u.LastName)as\ [FullName],CONCAT(a.Street,'\ ',a.PostalCode,'\ ',a.City)\ as\ [Adress]}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00040}00040\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FROM\ Users\ u}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00041}00041\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ Adresses\ a\ on\ a.UserId\ =\ u.Id}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00042}00042\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00044}00044\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ Down(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00048}00048\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DROP\ VIEW\ View\_MostComments}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00049}00049\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00051}00051\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DROP\ VIEW\ View\_NotAvailableGames}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00052}00052\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00054}00054\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DROP\ VIEW\ View\_TagGames}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00055}00055\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00057}00057\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DROP\ VIEW\ View\_UsersAdres}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00058}00058\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00061}00061\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111195401___other_views_add_8cs_source_l00062}00062\ \}}
+
+\end{DoxyCode}

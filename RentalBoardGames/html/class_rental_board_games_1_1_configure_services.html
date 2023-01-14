@@ -71,11 +71,9 @@ $(document).ready(function(){initNavTree('class_rental_board_games_1_1_configure
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae891c906933f16def637d2db8710f6fa"><td class="memItemLeft" align="right" valign="top"><a id="ae891c906933f16def637d2db8710f6fa" name="ae891c906933f16def637d2db8710f6fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureService</b> (IServiceCollection services)</td></tr>
+<tr class="memitem:ae891c906933f16def637d2db8710f6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rental_board_games_1_1_configure_services.html#ae891c906933f16def637d2db8710f6fa">ConfigureService</a> (IServiceCollection services)</td></tr>
 <tr class="separator:ae891c906933f16def637d2db8710f6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e1d092438217a1a9f4aaf5f74fd801"><td class="memItemLeft" align="right" valign="top"><a id="a97e1d092438217a1a9f4aaf5f74fd801" name="a97e1d092438217a1a9f4aaf5f74fd801"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Configure</b> (IApplicationBuilder app)</td></tr>
+<tr class="memitem:a97e1d092438217a1a9f4aaf5f74fd801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rental_board_games_1_1_configure_services.html#a97e1d092438217a1a9f4aaf5f74fd801">Configure</a> (IApplicationBuilder app)</td></tr>
 <tr class="separator:a97e1d092438217a1a9f4aaf5f74fd801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -86,8 +84,66 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Configure</b> (IAppli
   </table>
   </dd>
 </dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>RentalBoardGames/ConfigureServices.cs</li>
+
+<p class="definition">Definition at line <a class="el" href="_configure_services_8cs_source.html#l00007">7</a> of file <a class="el" href="_configure_services_8cs_source.html">ConfigureServices.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a97e1d092438217a1a9f4aaf5f74fd801" name="a97e1d092438217a1a9f4aaf5f74fd801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e1d092438217a1a9f4aaf5f74fd801">&#9670;&#160;</a></span>Configure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RentalBoardGames.ConfigureServices.Configure </td>
+          <td>(</td>
+          <td class="paramtype">IApplicationBuilder&#160;</td>
+          <td class="paramname"><em>app</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_configure_services_8cs_source.html#l00024">24</a> of file <a class="el" href="_configure_services_8cs_source.html">ConfigureServices.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>    {</div>
+<div class="line"><span class="lineno">   26</span>        app.UseCors(<span class="stringliteral">&quot;AllowOrigin &quot;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae891c906933f16def637d2db8710f6fa" name="ae891c906933f16def637d2db8710f6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae891c906933f16def637d2db8710f6fa">&#9670;&#160;</a></span>ConfigureService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RentalBoardGames.ConfigureServices.ConfigureService </td>
+          <td>(</td>
+          <td class="paramtype">IServiceCollection&#160;</td>
+          <td class="paramname"><em>services</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_configure_services_8cs_source.html#l00009">9</a> of file <a class="el" href="_configure_services_8cs_source.html">ConfigureServices.cs</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>    {</div>
+<div class="line"><span class="lineno">   11</span>        services.AddCors(options =&gt;</div>
+<div class="line"><span class="lineno">   12</span>        {</div>
+<div class="line"><span class="lineno">   13</span>            options.AddPolicy(</div>
+<div class="line"><span class="lineno">   14</span>                name: <span class="stringliteral">&quot;AllowOrigin&quot;</span>,</div>
+<div class="line"><span class="lineno">   15</span>                builder =&gt;{</div>
+<div class="line"><span class="lineno">   16</span>                    builder.AllowAnyOrigin()</div>
+<div class="line"><span class="lineno">   17</span>                        .AllowAnyMethod()</div>
+<div class="line"><span class="lineno">   18</span>                        .AllowAnyHeader();</div>
+<div class="line"><span class="lineno">   19</span>                });</div>
+<div class="line"><span class="lineno">   20</span>        });</div>
+<div class="line"><span class="lineno">   21</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>RentalBoardGames/<a class="el" href="_configure_services_8cs_source.html">ConfigureServices.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,32 @@
+\hypertarget{20230111175955___view_top_authors_added_8cs_source}{}\doxysection{20230111175955\+\_\+\+View\+Top\+Authors\+Added.\+cs}
+\label{20230111175955___view_top_authors_added_8cs_source}\index{RentalBoardGames/Migrations/20230111175955\_ViewTopAuthorsAdded.cs@{RentalBoardGames/Migrations/20230111175955\_ViewTopAuthorsAdded.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore.Migrations;}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00003}00003\ \textcolor{preprocessor}{\#nullable\ disable}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00005}00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_rental_board_games_1_1_migrations}{RentalBoardGames.Migrations}}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00008}\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added}{ViewTopAuthorsAdded}}\ :\ Migration}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00011}\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_aad368cfeb6f9ab06c5062e865295c04f}{00011}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_aad368cfeb6f9ab06c5062e865295c04f}{Up}}(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00014}00014\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CREATE\ VIEW\ View\_TopAuthors\ AS}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00015}00015\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SELECT\ u.Id,Concat(u.FirstName,'\ ',u.LastName)\ as\ [FullName],\ COUNT(*)\ as\ [CommentsCreated]}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FROM\ Users\ u}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Join\ BoardGameComments\ wi\ on\ wi.UserId\ =\ u.Id}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GROUP\ BY\ u.Id,u.FirstName,u.LastName\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00023}\mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_a7114d918ee192ade915b7aa1f11f1a5c}{00023}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_a7114d918ee192ade915b7aa1f11f1a5c}{Down}}(MigrationBuilder\ migrationBuilder)}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ migrationBuilder.Sql(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00026}00026\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DROP\ VIEW\ View\_TopAuthors"{}});\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00028}00028\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{20230111175955___view_top_authors_added_8cs_source_l00029}00029\ \}}
+
+\end{DoxyCode}
