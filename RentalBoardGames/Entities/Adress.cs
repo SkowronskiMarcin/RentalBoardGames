@@ -1,5 +1,8 @@
 ﻿namespace RentalBoardGames.Entities
 {
+    /// <summary>
+    /// Klasa dla encji do adresu
+    /// </summary>
     public class Adress
     {
         public int Id { get; set; }

@@ -1,5 +1,8 @@
 ﻿namespace RentalBoardGames.Entities
 {
+    /// <summary>
+    /// Klasa dla encji do komentarzy
+    /// </summary>
     public class BoardGameComment
     {
         public int Id { get; set; }

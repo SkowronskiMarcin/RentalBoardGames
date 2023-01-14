@@ -1,5 +1,8 @@
 ﻿namespace RentalBoardGames.Entities
 {
+    /// <summary>
+    /// Klasa dla encji tagów
+    /// </summary>
     public class Tag
     {
         public int Id { get; set; }

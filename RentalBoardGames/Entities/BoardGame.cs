@@ -1,5 +1,8 @@
 ﻿namespace RentalBoardGames.Entities
 {
+    /// <summary>
+    /// Klasa dla encji do gier planszowych
+    /// </summary>
     public class BoardGame
     {
         public int Id { get; set; }

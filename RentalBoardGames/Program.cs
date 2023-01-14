@@ -3,11 +3,21 @@ using Microsoft.EntityFrameworkCore;
 using RentalBoardGames.Entities;
 using RentalBoardGames.Entities.ViewModels;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Cors;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("devCorsPolicy", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+    });
+});
 
 //Dzieki tej linijce ignorujemy petle
 builder.Services.Configure<JsonOptions>(options => 
@@ -31,7 +41,7 @@ if (app.Environment.IsDevelopment())
 
 //Widoki =========================================================================================
 
-// Zwraca Autorów komentarzy i iloœæ ile dodali komentarzy
+
 app.MapGet("View_TopAuthors", (MyBoardsContext db) => 
 {
     var topAuthors = db.ViewTopAuthors.ToList();
@@ -66,7 +76,8 @@ app.MapGet("View_UsersAdres", (MyBoardsContext db) =>
 //Endpointy =========================================================================================
 
 //Get gry dane tylko z tabeli boardgames
-app.MapGet("Games", ( MyBoardsContext db) => 
+
+app.MapGet("Games", ( MyBoardsContext db) =>
 {  
     var boardGames = db.BoardGames.ToList();
     return boardGames;

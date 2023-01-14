@@ -1,5 +1,8 @@
 ﻿namespace RentalBoardGames.Entities
 {
+    /// <summary>
+    /// Klasa dla encji do transakcji
+    /// </summary>
     public class Transaction
     {
         public int Id { get; set; }

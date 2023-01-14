@@ -1,0 +1,182 @@
+\hypertarget{_program_8cs}{}\doxysection{Rental\+Board\+Games/\+Program.cs File Reference}
+\label{_program_8cs}\index{RentalBoardGames/Program.cs@{RentalBoardGames/Program.cs}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}{Add\+Endpoints\+Api\+Explorer}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae0ce43c019a5621d731d0c622c793644}{Add\+Swagger\+Gen}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_abc3694a0e15618f2499e5a540264f833}{Add\+Controllers}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ae4350227d99bbf978e22e465089000e3}{Add\+Cors}} (options=$>$ \{ options.\+Add\+Policy(\char`\"{}dev\+Cors\+Policy\char`\"{}, \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}=$>$ \{ builder.\+With\+Origins(\char`\"{}http\+://localhost\+:4200\char`\"{}).Allow\+Any\+Method().Allow\+Any\+Header();\});\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a92b3b397aa8bb17a357c5c93b68ebcae}{Configure$<$ Json\+Options $>$}} (options=$>$ \{ options.\+Serializer\+Options.\+Reference\+Handler=Reference\+Handler.\+Ignore\+Cycles;\})
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a35ebaed913f670028d16f78ce3af9b39}{Add\+Db\+Context$<$ My\+Boards\+Context $>$}} (option=$>$ option.\+Use\+Sql\+Server(builder.\+Configuration.\+Get\+Connection\+String(\char`\"{}My\+Boards\+Connection\+String\char`\"{})))
+\item 
+\mbox{\hyperlink{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}{if}} (app.\+Environment.\+Is\+Development())
+\item 
+app. \mbox{\hyperlink{_program_8cs_ab6daeb752cf5268b19931a98cf9aae08}{Map\+Get}} (\char`\"{}View\+\_\+\+Top\+Authors\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var top\+Authors=db.\+View\+Top\+Authors.\+To\+List();return top\+Authors;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a26916e8a538f7b135b9311117d643278}{Map\+Get}} (\char`\"{}View\+\_\+\+Most\+Comments\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var Most\+Comments=db.\+View\+Most\+Comments.\+To\+List();return Most\+Comments;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a25ce1cdc8286a3b4b7a4a2eed9372c65}{Map\+Get}} (\char`\"{}View\+\_\+\+Not\+Available\+Games\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var Not\+Available\+Games=db.\+View\+Not\+Available\+Games.\+To\+List();return Not\+Available\+Games;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a51da4b259d930233ec43030a64f20e5e}{Map\+Get}} (\char`\"{}View\+\_\+\+Tag\+Games\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var Tag\+Games=db.\+View\+Tag\+Games.\+To\+List();return Tag\+Games;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a9d81c80a0a351b63fc30fd0f9c78ab3f}{Map\+Get}} (\char`\"{}View\+\_\+\+Users\+Adres\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var Users\+Adress=db.\+View\+Users\+Adress.\+To\+List();return Users\+Adress;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a32dcbd0d431b1e1e42e0d0256e4287e2}{Map\+Get}} (\char`\"{}Games\char`\"{},(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var board\+Games=db.\+Board\+Games.\+To\+List();return board\+Games;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_ad569fc227780bbd961dc08cef4974b21}{Map\+Get}} (\char`\"{}/Games\+Comments\+Tags/\{id\}\char`\"{},(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var board\+Game=db.\+Board\+Games .Include(u=$>$ u.\+Comments) .Include(h=$>$ h.\+Tags) .First(u=$>$ u.\+Id==id);return board\+Game;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_ad22cbe7f20fc7b010a016d93b07feb6e}{Map\+Put}} (\char`\"{}/Change\+Availability/\{id\}\char`\"{},(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var board\+Game=db.\+Board\+Games.\+First(u=$>$ u.\+Id==id);\mbox{\hyperlink{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}{if}}(board\+Game.\+availability==true) \{ board\+Game.\+availability=false;\} else\{ board\+Game.\+availability=true;\} db.\+Save\+Changes();return board\+Game;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a8adb0c8df9e29e10e9e494831b8427b9}{Map\+Post}} (\char`\"{}/Create\+Game/\{Name\}/\{Number\+\_\+of\+\_\+players\}\char`\"{},(string Name, int Number\+\_\+of\+\_\+players, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{Board\+Game}} board\+Game=new \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{Board\+Game}}() \{ Name=Name, Number\+\_\+of\+\_\+players=Number\+\_\+of\+\_\+players, availability=true \};db.\+Add(board\+Game);db.\+Save\+Changes();return board\+Game;\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_aba0d435dcc990a7ed4afaee131cb241a}{Map\+Delete}} (\char`\"{}/Delete\+Game/\{id\}\char`\"{},(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var board\+Game=db.\+Board\+Games.\+First(u=$>$ u.\+Id==id);var comments=db.\+Board\+Game\+Comments.\+Where(u=$>$ u.\+Board\+Game\+Id==id).To\+List();db.\+Remove\+Range(comments);db.\+Remove(board\+Game);db.\+Save\+Changes();\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a96e50f22ed9c163222dc6eee2658c94a}{Map\+Delete}} (\char`\"{}/Delete\+Comment/\{id\}\char`\"{},(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)=$>$ \{ var comment=db.\+Board\+Game\+Comments.\+First(u=$>$ u.\+Id==id);db.\+Remove(comment);db.\+Save\+Changes();\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+var \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = builder.\+Build()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_program_8cs_abc3694a0e15618f2499e5a540264f833}\label{_program_8cs_abc3694a0e15618f2499e5a540264f833}} 
+\index{Program.cs@{Program.cs}!AddControllers@{AddControllers}}
+\index{AddControllers@{AddControllers}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddControllers()}{AddControllers()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Controllers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ae4350227d99bbf978e22e465089000e3}\label{_program_8cs_ae4350227d99bbf978e22e465089000e3}} 
+\index{Program.cs@{Program.cs}!AddCors@{AddCors}}
+\index{AddCors@{AddCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCors()}{AddCors()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Cors (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Add\+Policy(\char`\"{}dev\+Cors\+Policy\char`\"{}, \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}=$>$ \{ builder.\+With\+Origins(\char`\"{}http\+://localhost\+:4200\char`\"{}).Allow\+Any\+Method().Allow\+Any\+Header();\});\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a35ebaed913f670028d16f78ce3af9b39}\label{_program_8cs_a35ebaed913f670028d16f78ce3af9b39}} 
+\index{Program.cs@{Program.cs}!AddDbContext$<$ MyBoardsContext $>$@{AddDbContext$<$ MyBoardsContext $>$}}
+\index{AddDbContext$<$ MyBoardsContext $>$@{AddDbContext$<$ MyBoardsContext $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDbContext$<$ MyBoardsContext $>$()}{AddDbContext< MyBoardsContext >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Db\+Context$<$ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} $>$ (\begin{DoxyParamCaption}\item[{option}]{,  }\item[{option.}]{Use\+Sql\+Serverbuilder.\+Configuration.\+Get\+Connection\+String(\char`\"{}\+My\+Boards\+Connection\+String\char`\"{}) }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}\label{_program_8cs_a0d7859f9cad50e8e9fdf015100780e07}} 
+\index{Program.cs@{Program.cs}!AddEndpointsApiExplorer@{AddEndpointsApiExplorer}}
+\index{AddEndpointsApiExplorer@{AddEndpointsApiExplorer}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddEndpointsApiExplorer()}{AddEndpointsApiExplorer()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Endpoints\+Api\+Explorer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ae0ce43c019a5621d731d0c622c793644}\label{_program_8cs_ae0ce43c019a5621d731d0c622c793644}} 
+\index{Program.cs@{Program.cs}!AddSwaggerGen@{AddSwaggerGen}}
+\index{AddSwaggerGen@{AddSwaggerGen}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddSwaggerGen()}{AddSwaggerGen()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Swagger\+Gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a92b3b397aa8bb17a357c5c93b68ebcae}\label{_program_8cs_a92b3b397aa8bb17a357c5c93b68ebcae}} 
+\index{Program.cs@{Program.cs}!Configure$<$ JsonOptions $>$@{Configure$<$ JsonOptions $>$}}
+\index{Configure$<$ JsonOptions $>$@{Configure$<$ JsonOptions $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Configure$<$ JsonOptions $>$()}{Configure< JsonOptions >()}}
+{\footnotesize\ttfamily builder.\+Services. Configure$<$ Json\+Options $>$ (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Serializer\+Options.\+Reference\+Handler=Reference\+Handler.\+Ignore\+Cycles;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}\label{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}} 
+\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{app\+::\+Environment\+::\+Is\+Development()}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a96e50f22ed9c163222dc6eee2658c94a}\label{_program_8cs_a96e50f22ed9c163222dc6eee2658c94a}} 
+\index{Program.cs@{Program.cs}!MapDelete@{MapDelete}}
+\index{MapDelete@{MapDelete}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapDelete()}{MapDelete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily app. Map\+Delete (\begin{DoxyParamCaption}\item[{\char`\"{}/Delete\+Comment/\{id\}\char`\"{}}]{,  }\item[{(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var comment=db.\+Board\+Game\+Comments.\+First(u=$>$ u.\+Id==id);db.\+Remove(comment);db.\+Save\+Changes();\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_aba0d435dcc990a7ed4afaee131cb241a}\label{_program_8cs_aba0d435dcc990a7ed4afaee131cb241a}} 
+\index{Program.cs@{Program.cs}!MapDelete@{MapDelete}}
+\index{MapDelete@{MapDelete}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapDelete()}{MapDelete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily app. Map\+Delete (\begin{DoxyParamCaption}\item[{\char`\"{}/Delete\+Game/\{id\}\char`\"{}}]{,  }\item[{(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var board\+Game=db.\+Board\+Games.\+First(u=$>$ u.\+Id==id);var comments=db.\+Board\+Game\+Comments.\+Where(u=$>$ u.\+Board\+Game\+Id==id).To\+List();db.\+Remove\+Range(comments);db.\+Remove(board\+Game);db.\+Save\+Changes();\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ad569fc227780bbd961dc08cef4974b21}\label{_program_8cs_ad569fc227780bbd961dc08cef4974b21}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}/Games\+Comments\+Tags/\{id\}\char`\"{}}]{,  }\item[{(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var board\+Game=db.\+Board\+Games .Include(u=$>$ u.\+Comments) .Include(h=$>$ h.\+Tags) .First(u=$>$ u.\+Id==id);return board\+Game;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a32dcbd0d431b1e1e42e0d0256e4287e2}\label{_program_8cs_a32dcbd0d431b1e1e42e0d0256e4287e2}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}Games\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var board\+Games=db.\+Board\+Games.\+To\+List();return board\+Games;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a26916e8a538f7b135b9311117d643278}\label{_program_8cs_a26916e8a538f7b135b9311117d643278}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}View\+\_\+\+Most\+Comments\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var Most\+Comments=db.\+View\+Most\+Comments.\+To\+List();return Most\+Comments;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a25ce1cdc8286a3b4b7a4a2eed9372c65}\label{_program_8cs_a25ce1cdc8286a3b4b7a4a2eed9372c65}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}View\+\_\+\+Not\+Available\+Games\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var Not\+Available\+Games=db.\+View\+Not\+Available\+Games.\+To\+List();return Not\+Available\+Games;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a51da4b259d930233ec43030a64f20e5e}\label{_program_8cs_a51da4b259d930233ec43030a64f20e5e}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}View\+\_\+\+Tag\+Games\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var Tag\+Games=db.\+View\+Tag\+Games.\+To\+List();return Tag\+Games;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ab6daeb752cf5268b19931a98cf9aae08}\label{_program_8cs_ab6daeb752cf5268b19931a98cf9aae08}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}View\+\_\+\+Top\+Authors\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var top\+Authors=db.\+View\+Top\+Authors.\+To\+List();return top\+Authors;\}}]{ }\end{DoxyParamCaption})}
+
+Test \mbox{\Hypertarget{_program_8cs_a9d81c80a0a351b63fc30fd0f9c78ab3f}\label{_program_8cs_a9d81c80a0a351b63fc30fd0f9c78ab3f}} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{\char`\"{}View\+\_\+\+Users\+Adres\char`\"{}}]{,  }\item[{(\mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var Users\+Adress=db.\+View\+Users\+Adress.\+To\+List();return Users\+Adress;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_a8adb0c8df9e29e10e9e494831b8427b9}\label{_program_8cs_a8adb0c8df9e29e10e9e494831b8427b9}} 
+\index{Program.cs@{Program.cs}!MapPost@{MapPost}}
+\index{MapPost@{MapPost}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapPost()}{MapPost()}}
+{\footnotesize\ttfamily app. Map\+Post (\begin{DoxyParamCaption}\item[{\char`\"{}/Create\+Game/\{Name\}/\{Number\+\_\+of\+\_\+players\}\char`\"{}}]{,  }\item[{(string Name, int Number\+\_\+of\+\_\+players, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{Board\+Game}} board\+Game=new \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_board_game}{Board\+Game}}() \{ Name=Name, Number\+\_\+of\+\_\+players=Number\+\_\+of\+\_\+players, availability=true \};db.\+Add(board\+Game);db.\+Save\+Changes();return board\+Game;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_ad22cbe7f20fc7b010a016d93b07feb6e}\label{_program_8cs_ad22cbe7f20fc7b010a016d93b07feb6e}} 
+\index{Program.cs@{Program.cs}!MapPut@{MapPut}}
+\index{MapPut@{MapPut}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapPut()}{MapPut()}}
+{\footnotesize\ttfamily app. Map\+Put (\begin{DoxyParamCaption}\item[{\char`\"{}/Change\+Availability/\{id\}\char`\"{}}]{,  }\item[{(int id, \mbox{\hyperlink{class_rental_board_games_1_1_entities_1_1_my_boards_context}{My\+Boards\+Context}} db)}]{,  }\item[{\{ var board\+Game=db.\+Board\+Games.\+First(u=$>$ u.\+Id==id);\mbox{\hyperlink{_program_8cs_a79a944c7f0e25196ca3c5a8638b919b9}{if}}(board\+Game.\+availability==true) \{ board\+Game.\+availability=false;\} else\{ board\+Game.\+availability=true;\} db.\+Save\+Changes();return board\+Game;\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}\label{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily var app = builder.\+Build()}
+
+\mbox{\Hypertarget{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Application.\+Create\+Builder(args)}
+
