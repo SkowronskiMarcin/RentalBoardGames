@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_rental_board_games_1_1_entities_1_1_view_models" kind="namespace" language="C#">
+    <compoundname>RentalBoardGames::Entities::ViewModels</compoundname>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment" prot="public">RentalBoardGames::Entities::ViewModels::MostComment</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_not_available_game" prot="public">RentalBoardGames::Entities::ViewModels::NotAvailableGame</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_tag_game" prot="public">RentalBoardGames::Entities::ViewModels::TagGame</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author" prot="public">RentalBoardGames::Entities::ViewModels::TopAuthor</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress" prot="public">RentalBoardGames::Entities::ViewModels::UserAdress</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/ViewModels/MostComment.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

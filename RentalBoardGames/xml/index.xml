@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="class_rental_board_games_1_1_entities_1_1_adress" kind="class"><name>RentalBoardGames::Entities::Adress</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1a62e774cf152b094030bf3b17504964fd" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1ade906d3eb89c0c27215abafa65dddb57" kind="property"><name>Coutry</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1a4ecd38efa14fdc092098a386ece7158f" kind="property"><name>City</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1a6ca274e8bd96705c31f1f1a264fdbb0a" kind="property"><name>Street</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1a47abc76197752193a4c9ea490e08e756" kind="property"><name>PostalCode</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1a9d9d53bc5d89ebd134adae8a9b163a83" kind="property"><name>User</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_adress_1af536ed58b21201698958b980a1d5b96c" kind="property"><name>UserId</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_board_game" kind="class"><name>RentalBoardGames::Entities::BoardGame</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a8306eac55d1d7afca34cd76dcd935be2" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1ab71161b0e03cbe8a711d7f41f347228d" kind="property"><name>Name</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a282bd07bdd218099db918c9e5bdaadc4" kind="property"><name>Number_of_players</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a87f8386a0edd19433c1fb6e9733f900d" kind="property"><name>availability</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a3a0e0869a5947b0a47b526c32617499e" kind="property"><name>Comments</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1aacd05a3a8fe3715a91b870bdd7d5c2ed" kind="property"><name>Transactions</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1ad138f1414063a52fe7384524634ab711" kind="property"><name>Tags</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_board_game_comment" kind="class"><name>RentalBoardGames::Entities::BoardGameComment</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a6ce99a130bbf7d6e9fd29c8779025bb4" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a37db39ea4189365945db3e81ea6b30de" kind="property"><name>Message</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1ae058d2847b60669ed259954e21ffb70e" kind="property"><name>Author</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1aa2e8863ecdde0314bfa917f2475f5d56" kind="property"><name>CreatedDate</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a626d498d570ce7db07a14806fd0f617e" kind="property"><name>UpdatedDate</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a6c3f23ac2c2aab52f4c8f56892ab0729" kind="property"><name>BoardGame</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a845feb735a3dde4a63040c48bd1019bd" kind="property"><name>BoardGameId</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a23a0361a93cf4c0a265aabf8a2f0dc1b" kind="property"><name>User</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a379b1184e23ff7c7faa81c3e07c65916" kind="property"><name>UserId</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_configure_services" kind="class"><name>RentalBoardGames::ConfigureServices</name>
+    <member refid="class_rental_board_games_1_1_configure_services_1ae891c906933f16def637d2db8710f6fa" kind="function"><name>ConfigureService</name></member>
+    <member refid="class_rental_board_games_1_1_configure_services_1a97e1d092438217a1a9f4aaf5f74fd801" kind="function"><name>Configure</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_migrations_1_1_init" kind="class"><name>RentalBoardGames::Migrations::Init</name>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_init_1a8658da4ac266b2229854377b38407679" kind="function"><name>Up</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_init_1a1756ef04e9fb6cabecff4d7d8f2b7488" kind="function"><name>Down</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_init_1af220b9df162396af57f8624ca86a255a" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment" kind="class"><name>RentalBoardGames::Entities::ViewModels::MostComment</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1afa131cf19a23c0e72b3cb1cc048dc293" kind="property"><name>Name</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1aa2bc3a096f1a6a42ac1c3be0c2307f83" kind="property"><name>Comments</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kind="class"><name>RentalBoardGames::Entities::MyBoardsContext</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kind="property"><name>BoardGames</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ad8fbe5d0142777d515d64ff265998e8a" kind="property"><name>Users</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a0a9f3d9ac2d9aefece9912620bf156df" kind="property"><name>Tags</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1aaef501bcb52fb71bf82ec223ba1caded" kind="property"><name>BoardGameComments</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a57cc4e73a60674bcac13ae25e6a422ed" kind="property"><name>Adresses</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a9448a4fa7dc53fb51bef7bee90950f56" kind="property"><name>Transactions</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ad72d8740c331dd6e9a5e7e4f482e4088" kind="property"><name>ViewTopAuthors</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ae7090e6c0ee96f32526fc8d23a8b5efc" kind="property"><name>ViewMostComments</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1abbb813a25229ee91215885c31fc964f9" kind="property"><name>ViewNotAvailableGames</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a50781c7d42fc74b988270ada5c10128f" kind="property"><name>ViewTagGames</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a6691cc07a0ab3b31644058b6f94007d3" kind="property"><name>ViewUsersAdress</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a7e9f3ec0799f88843d3f1eecb597b0c4" kind="function"><name>MyBoardsContext</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a992c99cacb046405af9045191b92c891" kind="function"><name>OnModelCreating</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot" kind="class"><name>RentalBoardGames::Migrations::MyBoardsContextModelSnapshot</name>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot_1a3b0bab6f2c83819bc8507cd88fa7a0b7" kind="function"><name>BuildModel</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_not_available_game" kind="class"><name>RentalBoardGames::Entities::ViewModels::NotAvailableGame</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_not_available_game_1aa284b4023f50e843746247654b0c0b02" kind="property"><name>Name</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_not_available_game_1a652985c725dfa736a3c0d8092bf5d55e" kind="property"><name>Deadline</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_not_available_game_1a45e8bf3349aee4be0e01e03fac168811" kind="property"><name>FullName</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_migrations_1_1_other_views_add" kind="class"><name>RentalBoardGames::Migrations::OtherViewsAdd</name>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a3f110a657dc7d3d205217f8fa93b83d7" kind="function"><name>Up</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a729951b1b38adb5856daba84266c6c3f" kind="function"><name>Down</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a61d2807c3a75586f83f8602533bbf8a9" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_migrations_1_1_seed" kind="class"><name>RentalBoardGames::Migrations::Seed</name>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_seed_1a73b381b92c0a39f96b80375a74c06e97" kind="function"><name>Up</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_seed_1a072752c09d23bc80b7e9e9e146c033d3" kind="function"><name>Down</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_seed_1a4aed3c80a0b1a83819630fe51fe58c2e" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_tag" kind="class"><name>RentalBoardGames::Entities::Tag</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_tag_1acae1307829efc852bb6ecca066417cc4" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_tag_1aea411e0563a992a484ddcbf5fd6bf021" kind="property"><name>Value</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_tag_1a7c1e558e83a9ca8e93633147aaf22bba" kind="property"><name>BoardGames</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_tag_game" kind="class"><name>RentalBoardGames::Entities::ViewModels::TagGame</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_tag_game_1a3622b3a17a6f51bd94bb30710a1c6e90" kind="property"><name>Value</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_tag_game_1a99f7246f7279f1d80b8ecb38c015957f" kind="property"><name>Name</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author" kind="class"><name>RentalBoardGames::Entities::ViewModels::TopAuthor</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1aac37bce3bbe734aac75a6983d0c3aa18" kind="property"><name>FullName</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1adc7c84ebd2091a909656d97796fe518c" kind="property"><name>CommentsCreated</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_transaction" kind="class"><name>RentalBoardGames::Entities::Transaction</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1aa1d0a522bcfc9e21bdeec6232ad50d41" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1aa9c124ecb95e5ede3ef476e211632f0b" kind="property"><name>CreatedDate</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a893ddc39054fc04314eab2f8c537f746" kind="property"><name>Deadline</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a9dd7e8817741400342f8664fc4672fb0" kind="property"><name>User</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a4dfa485d7ca4954625c7fe3d5aa2aee6" kind="property"><name>UserId</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a48b1dd8f548cf6da4451485a3b35d110" kind="property"><name>BoardGame</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a0a7c8b7b6e5f6aed0f29aae8d38c0253" kind="property"><name>BoardGameId</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_user" kind="class"><name>RentalBoardGames::Entities::User</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a8aece3a6178eafe5f577d891e4e633e3" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a1455d58d5af72a4798cca8f9c9245431" kind="property"><name>FirstName</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a14313255daec1158e402b4f8071141ef" kind="property"><name>LastName</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1aee62eb12ad75828e8dd2787186410096" kind="property"><name>Email</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a4c2d3037308eb1f5d4057d67c0f8c3a0" kind="property"><name>UserType</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a53fdae996a32a113249891e9a37c5691" kind="property"><name>Adress</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a8f039725dc9e07e30c12ac1a0001d31c" kind="property"><name>Rented_Games</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1ad83e588fa8c7113f94122917a933e07f" kind="property"><name>Comments</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_user_1a6ba3a3bdc0d99aa4141ab3d02e312f7a" kind="property"><name>Transactions</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress" kind="class"><name>RentalBoardGames::Entities::ViewModels::UserAdress</name>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a6cb08f5806bad5ba210622f0b44c387a" kind="property"><name>Id</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a139db4eebe79ddf3d4c624a3f2ca106e" kind="property"><name>FullName</name></member>
+    <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a8cbaa6447ed9f327541906e845c11400" kind="property"><name>Adress</name></member>
+  </compound>
+  <compound refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added" kind="class"><name>RentalBoardGames::Migrations::ViewTopAuthorsAdded</name>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1aad368cfeb6f9ab06c5062e865295c04f" kind="function"><name>Up</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1a7114d918ee192ade915b7aa1f11f1a5c" kind="function"><name>Down</name></member>
+    <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1adb5c236fda7a25b0aa988a48ed2997c2" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_cors" kind="namespace"><name>Microsoft::AspNetCore::Cors</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_http_1_1_json" kind="namespace"><name>Microsoft::AspNetCore::Http::Json</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_infrastructure" kind="namespace"><name>Microsoft::EntityFrameworkCore::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_metadata" kind="namespace"><name>Microsoft::EntityFrameworkCore::Metadata</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_migrations" kind="namespace"><name>Microsoft::EntityFrameworkCore::Migrations</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_storage_1_1_value_conversion" kind="namespace"><name>Microsoft::EntityFrameworkCore::Storage::ValueConversion</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_extensions_1_1_options" kind="namespace"><name>Microsoft::Extensions::Options</name>
+  </compound>
+  <compound refid="namespace_rental_board_games" kind="namespace"><name>RentalBoardGames</name>
+  </compound>
+  <compound refid="namespace_rental_board_games_1_1_entities" kind="namespace"><name>RentalBoardGames::Entities</name>
+  </compound>
+  <compound refid="namespace_rental_board_games_1_1_entities_1_1_view_models" kind="namespace"><name>RentalBoardGames::Entities::ViewModels</name>
+  </compound>
+  <compound refid="namespace_rental_board_games_1_1_migrations" kind="namespace"><name>RentalBoardGames::Migrations</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json_1_1_serialization" kind="namespace"><name>System::Text::Json::Serialization</name>
+  </compound>
+  <compound refid="_configure_services_8cs" kind="file"><name>ConfigureServices.cs</name>
+  </compound>
+  <compound refid="_adress_8cs" kind="file"><name>Adress.cs</name>
+  </compound>
+  <compound refid="_board_game_8cs" kind="file"><name>BoardGame.cs</name>
+  </compound>
+  <compound refid="_board_game_comment_8cs" kind="file"><name>BoardGameComment.cs</name>
+  </compound>
+  <compound refid="_my_boards_context_8cs" kind="file"><name>MyBoardsContext.cs</name>
+  </compound>
+  <compound refid="_tag_8cs" kind="file"><name>Tag.cs</name>
+  </compound>
+  <compound refid="_transaction_8cs" kind="file"><name>Transaction.cs</name>
+  </compound>
+  <compound refid="_user_8cs" kind="file"><name>User.cs</name>
+  </compound>
+  <compound refid="_most_comment_8cs" kind="file"><name>MostComment.cs</name>
+  </compound>
+  <compound refid="_not_available_game_8cs" kind="file"><name>NotAvailableGame.cs</name>
+  </compound>
+  <compound refid="_tag_game_8cs" kind="file"><name>TagGame.cs</name>
+  </compound>
+  <compound refid="_top_author_8cs" kind="file"><name>TopAuthor.cs</name>
+  </compound>
+  <compound refid="_user_adress_8cs" kind="file"><name>UserAdress.cs</name>
+  </compound>
+  <compound refid="20230106132958___init_8cs" kind="file"><name>20230106132958_Init.cs</name>
+  </compound>
+  <compound refid="20230106132958___init_8_designer_8cs" kind="file"><name>20230106132958_Init.Designer.cs</name>
+  </compound>
+  <compound refid="20230106143150___seed_8cs" kind="file"><name>20230106143150_Seed.cs</name>
+  </compound>
+  <compound refid="20230106143150___seed_8_designer_8cs" kind="file"><name>20230106143150_Seed.Designer.cs</name>
+  </compound>
+  <compound refid="20230111175955___view_top_authors_added_8cs" kind="file"><name>20230111175955_ViewTopAuthorsAdded.cs</name>
+  </compound>
+  <compound refid="20230111175955___view_top_authors_added_8_designer_8cs" kind="file"><name>20230111175955_ViewTopAuthorsAdded.Designer.cs</name>
+  </compound>
+  <compound refid="20230111195401___other_views_add_8cs" kind="file"><name>20230111195401_OtherViewsAdd.cs</name>
+  </compound>
+  <compound refid="20230111195401___other_views_add_8_designer_8cs" kind="file"><name>20230111195401_OtherViewsAdd.Designer.cs</name>
+  </compound>
+  <compound refid="_my_boards_context_model_snapshot_8cs" kind="file"><name>MyBoardsContextModelSnapshot.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_rental_board_games_8_assembly_info_8cs" kind="file"><name>RentalBoardGames.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_rental_board_games_8_global_usings_8g_8cs" kind="file"><name>RentalBoardGames.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_rental_board_games_8_mvc_application_parts_assembly_info_8cs" kind="file"><name>RentalBoardGames.MvcApplicationPartsAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_program_8cs_1a0d7859f9cad50e8e9fdf015100780e07" kind="function"><name>AddEndpointsApiExplorer</name></member>
+    <member refid="_program_8cs_1ae0ce43c019a5621d731d0c622c793644" kind="function"><name>AddSwaggerGen</name></member>
+    <member refid="_program_8cs_1abc3694a0e15618f2499e5a540264f833" kind="function"><name>AddControllers</name></member>
+    <member refid="_program_8cs_1ae4350227d99bbf978e22e465089000e3" kind="function"><name>AddCors</name></member>
+    <member refid="_program_8cs_1a92b3b397aa8bb17a357c5c93b68ebcae" kind="function"><name>Configure&lt; JsonOptions &gt;</name></member>
+    <member refid="_program_8cs_1a35ebaed913f670028d16f78ce3af9b39" kind="function"><name>AddDbContext&lt; MyBoardsContext &gt;</name></member>
+    <member refid="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1ab6daeb752cf5268b19931a98cf9aae08" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1a26916e8a538f7b135b9311117d643278" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1a25ce1cdc8286a3b4b7a4a2eed9372c65" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1a51da4b259d930233ec43030a64f20e5e" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1a9d81c80a0a351b63fc30fd0f9c78ab3f" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1a32dcbd0d431b1e1e42e0d0256e4287e2" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1ad569fc227780bbd961dc08cef4974b21" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1ad22cbe7f20fc7b010a016d93b07feb6e" kind="function"><name>MapPut</name></member>
+    <member refid="_program_8cs_1a8adb0c8df9e29e10e9e494831b8427b9" kind="function"><name>MapPost</name></member>
+    <member refid="_program_8cs_1aba0d435dcc990a7ed4afaee131cb241a" kind="function"><name>MapDelete</name></member>
+    <member refid="_program_8cs_1a96e50f22ed9c163222dc6eee2658c94a" kind="function"><name>MapDelete</name></member>
+    <member refid="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="dir_0a5c48d4480494172fbe427ed1bcf9a3" kind="dir"><name>RentalBoardGames/obj/Debug</name>
+  </compound>
+  <compound refid="dir_a8e541df42df8e47a6d0940a1ec5f416" kind="dir"><name>RentalBoardGames/Entities</name>
+  </compound>
+  <compound refid="dir_4ca20c443656b61a5d4c92ecf9c01001" kind="dir"><name>RentalBoardGames/Migrations</name>
+  </compound>
+  <compound refid="dir_7c16bf65d955996ba254ae985ce037d4" kind="dir"><name>RentalBoardGames/obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_e7e62e7e5bfada64492c27961e83613a" kind="dir"><name>RentalBoardGames/obj</name>
+  </compound>
+  <compound refid="dir_fd36d69192529be1bbbc64761bc2f303" kind="dir"><name>RentalBoardGames</name>
+  </compound>
+  <compound refid="dir_6b3c8cec18804ffbc244455202ce4c48" kind="dir"><name>RentalBoardGames/Entities/ViewModels</name>
+  </compound>
+</doxygenindex>

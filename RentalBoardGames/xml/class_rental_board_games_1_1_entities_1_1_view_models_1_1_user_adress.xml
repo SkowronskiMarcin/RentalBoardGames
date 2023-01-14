@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Entities::ViewModels::UserAdress</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a6cb08f5806bad5ba210622f0b44c387a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.ViewModels.UserAdress.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a139db4eebe79ddf3d4c624a3f2ca106e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RentalBoardGames.Entities.ViewModels.UserAdress.FullName</definition>
+        <argsstring></argsstring>
+        <name>FullName</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.FullName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="9" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a8cbaa6447ed9f327541906e845c11400" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RentalBoardGames.Entities.ViewModels.UserAdress.Adress</definition>
+        <argsstring></argsstring>
+        <name>Adress</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.Adress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="10" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa do utworzenia widoku do zwrócenia adresu użytkownika. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a8cbaa6447ed9f327541906e845c11400" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::UserAdress</scope><name>Adress</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a139db4eebe79ddf3d4c624a3f2ca106e" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::UserAdress</scope><name>FullName</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a6cb08f5806bad5ba210622f0b44c387a" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::UserAdress</scope><name>Id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

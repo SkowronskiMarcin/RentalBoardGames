@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_configure_services" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::ConfigureServices</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rental_board_games_1_1_configure_services_1ae891c906933f16def637d2db8710f6fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RentalBoardGames.ConfigureServices.ConfigureService</definition>
+        <argsstring>(IServiceCollection services)</argsstring>
+        <name>ConfigureService</name>
+        <qualifiedname>RentalBoardGames.ConfigureServices.ConfigureService</qualifiedname>
+        <param>
+          <type>IServiceCollection</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/ConfigureServices.cs" line="9" column="17" bodyfile="RentalBoardGames/ConfigureServices.cs" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_configure_services_1a97e1d092438217a1a9f4aaf5f74fd801" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RentalBoardGames.ConfigureServices.Configure</definition>
+        <argsstring>(IApplicationBuilder app)</argsstring>
+        <name>Configure</name>
+        <qualifiedname>RentalBoardGames.ConfigureServices.Configure</qualifiedname>
+        <param>
+          <type>IApplicationBuilder</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/ConfigureServices.cs" line="24" column="17" bodyfile="RentalBoardGames/ConfigureServices.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Konfiguracja serwisu odpowiadająca za usunięcie cors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>services</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="RentalBoardGames/ConfigureServices.cs" line="7" column="7" bodyfile="RentalBoardGames/ConfigureServices.cs" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_configure_services_1a97e1d092438217a1a9f4aaf5f74fd801" prot="public" virt="non-virtual"><scope>RentalBoardGames::ConfigureServices</scope><name>Configure</name></member>
+      <member refid="class_rental_board_games_1_1_configure_services_1ae891c906933f16def637d2db8710f6fa" prot="public" virt="non-virtual"><scope>RentalBoardGames::ConfigureServices</scope><name>ConfigureService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

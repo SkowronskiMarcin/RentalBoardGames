@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_http_1_1_json">Microsoft::AspNetCore::Http::Json</innernamespace>
+    <innernamespace refid="namespace_system_1_1_text_1_1_json_1_1_serialization">System::Text::Json::Serialization</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_cors">Microsoft::AspNetCore::Cors</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebApplication.CreateBuilder(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="8" column="5" bodyfile="RentalBoardGames/Program.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>= builder.Build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="33" column="5" bodyfile="RentalBoardGames/Program.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1a0d7859f9cad50e8e9fdf015100780e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddEndpointsApiExplorer</definition>
+        <argsstring>()</argsstring>
+        <name>AddEndpointsApiExplorer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="10" column="16" declfile="RentalBoardGames/Program.cs" declline="10" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ae0ce43c019a5621d731d0c622c793644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddSwaggerGen</definition>
+        <argsstring>()</argsstring>
+        <name>AddSwaggerGen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="11" column="16" declfile="RentalBoardGames/Program.cs" declline="11" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1abc3694a0e15618f2499e5a540264f833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddControllers</definition>
+        <argsstring>()</argsstring>
+        <name>AddControllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="12" column="16" declfile="RentalBoardGames/Program.cs" declline="12" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ae4350227d99bbf978e22e465089000e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddCors</definition>
+        <argsstring>(options=&gt; { options.AddPolicy(&quot;devCorsPolicy&quot;, builder=&gt; { builder.WithOrigins(&quot;http://localhost:4200&quot;).AllowAnyMethod().AllowAnyHeader();});})</argsstring>
+        <name>AddCors</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>{ options.AddPolicy(&quot;devCorsPolicy&quot;, <ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>=&gt; { builder.WithOrigins(&quot;http://localhost:4200&quot;).AllowAnyMethod().AllowAnyHeader();});}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="14" column="16" declfile="RentalBoardGames/Program.cs" declline="14" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a92b3b397aa8bb17a357c5c93b68ebcae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. Configure&lt; JsonOptions &gt;</definition>
+        <argsstring>(options=&gt; { options.SerializerOptions.ReferenceHandler=ReferenceHandler.IgnoreCycles;})</argsstring>
+        <name>Configure&lt; JsonOptions &gt;</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>{ options.SerializerOptions.ReferenceHandler=ReferenceHandler.IgnoreCycles;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="23" column="8" declfile="RentalBoardGames/Program.cs" declline="23" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a35ebaed913f670028d16f78ce3af9b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDbContext&lt; MyBoardsContext &gt;</definition>
+        <argsstring>(option=&gt; option.UseSqlServer(builder.Configuration.GetConnectionString(&quot;MyBoardsConnectionString&quot;)))</argsstring>
+        <name>AddDbContext&lt; MyBoardsContext &gt;</name>
+        <param>
+          <type>option</type>
+        </param>
+        <param>
+          <type>option.</type>
+          <declname>UseSqlServer</declname>
+          <array>builder.Configuration.GetConnectionString(&quot;MyBoardsConnectionString&quot;)</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="29" column="8" declfile="RentalBoardGames/Program.cs" declline="29" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(app.Environment.IsDevelopment())</argsstring>
+        <name>if</name>
+        <param>
+          <type>app.Environment.</type>
+          <declname>IsDevelopment</declname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="36" column="1" bodyfile="RentalBoardGames/Program.cs" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ab6daeb752cf5268b19931a98cf9aae08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;View_TopAuthors&quot;,(MyBoardsContext db)=&gt; { var topAuthors=db.ViewTopAuthors.ToList();return topAuthors;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;View_TopAuthors&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var topAuthors=db.ViewTopAuthors.ToList();return topAuthors;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="45" column="4" declfile="RentalBoardGames/Program.cs" declline="45" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a26916e8a538f7b135b9311117d643278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;View_MostComments&quot;,(MyBoardsContext db)=&gt; { var MostComments=db.ViewMostComments.ToList();return MostComments;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;View_MostComments&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var MostComments=db.ViewMostComments.ToList();return MostComments;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="52" column="4" declfile="RentalBoardGames/Program.cs" declline="52" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a25ce1cdc8286a3b4b7a4a2eed9372c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;View_NotAvailableGames&quot;,(MyBoardsContext db)=&gt; { var NotAvailableGames=db.ViewNotAvailableGames.ToList();return NotAvailableGames;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;View_NotAvailableGames&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var NotAvailableGames=db.ViewNotAvailableGames.ToList();return NotAvailableGames;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="58" column="4" declfile="RentalBoardGames/Program.cs" declline="58" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a51da4b259d930233ec43030a64f20e5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;View_TagGames&quot;,(MyBoardsContext db)=&gt; { var TagGames=db.ViewTagGames.ToList();return TagGames;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;View_TagGames&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var TagGames=db.ViewTagGames.ToList();return TagGames;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="64" column="4" declfile="RentalBoardGames/Program.cs" declline="64" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a9d81c80a0a351b63fc30fd0f9c78ab3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;View_UsersAdres&quot;,(MyBoardsContext db)=&gt; { var UsersAdress=db.ViewUsersAdress.ToList();return UsersAdress;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;View_UsersAdres&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var UsersAdress=db.ViewUsersAdress.ToList();return UsersAdress;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="70" column="4" declfile="RentalBoardGames/Program.cs" declline="70" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a32dcbd0d431b1e1e42e0d0256e4287e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;Games&quot;,(MyBoardsContext db)=&gt; { var boardGames=db.BoardGames.ToList();return boardGames;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;Games&quot;</type>
+        </param>
+        <param>
+          <type>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var boardGames=db.BoardGames.ToList();return boardGames;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="80" column="4" declfile="RentalBoardGames/Program.cs" declline="80" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ad569fc227780bbd961dc08cef4974b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;/GamesCommentsTags/{id}&quot;,(int id, MyBoardsContext db)=&gt; { var boardGame=db.BoardGames .Include(u=&gt; u.Comments) .Include(h=&gt; h.Tags) .First(u=&gt; u.Id==id);return boardGame;})</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;/GamesCommentsTags/{id}&quot;</type>
+        </param>
+        <param>
+          <type>(int id, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var boardGame=db.BoardGames .Include(u=&gt; u.Comments) .Include(h=&gt; h.Tags) .First(u=&gt; u.Id==id);return boardGame;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="87" column="4" declfile="RentalBoardGames/Program.cs" declline="87" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ad22cbe7f20fc7b010a016d93b07feb6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapPut</definition>
+        <argsstring>(&quot;/ChangeAvailability/{id}&quot;,(int id, MyBoardsContext db)=&gt; { var boardGame=db.BoardGames.First(u=&gt; u.Id==id);if(boardGame.availability==true) { boardGame.availability=false;} else{ boardGame.availability=true;} db.SaveChanges();return boardGame;})</argsstring>
+        <name>MapPut</name>
+        <param>
+          <type>&quot;/ChangeAvailability/{id}&quot;</type>
+        </param>
+        <param>
+          <type>(int id, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var boardGame=db.BoardGames.First(u=&gt; u.Id==id);<ref refid="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kindref="member">if</ref>(boardGame.availability==true) { boardGame.availability=false;} else{ boardGame.availability=true;} db.SaveChanges();return boardGame;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="97" column="4" declfile="RentalBoardGames/Program.cs" declline="97" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a8adb0c8df9e29e10e9e494831b8427b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapPost</definition>
+        <argsstring>(&quot;/CreateGame/{Name}/{Number_of_players}&quot;,(string Name, int Number_of_players, MyBoardsContext db)=&gt; { BoardGame boardGame=new BoardGame() { Name=Name, Number_of_players=Number_of_players, availability=true };db.Add(boardGame);db.SaveChanges();return boardGame;})</argsstring>
+        <name>MapPost</name>
+        <param>
+          <type>&quot;/CreateGame/{Name}/{Number_of_players}&quot;</type>
+        </param>
+        <param>
+          <type>(string Name, int Number_of_players, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ <ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref> boardGame=new <ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref>() { Name=Name, Number_of_players=Number_of_players, availability=true };db.Add(boardGame);db.SaveChanges();return boardGame;}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="112" column="4" declfile="RentalBoardGames/Program.cs" declline="112" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aba0d435dcc990a7ed4afaee131cb241a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapDelete</definition>
+        <argsstring>(&quot;/DeleteGame/{id}&quot;,(int id, MyBoardsContext db)=&gt; { var boardGame=db.BoardGames.First(u=&gt; u.Id==id);var comments=db.BoardGameComments.Where(u=&gt; u.BoardGameId==id).ToList();db.RemoveRange(comments);db.Remove(boardGame);db.SaveChanges();})</argsstring>
+        <name>MapDelete</name>
+        <param>
+          <type>&quot;/DeleteGame/{id}&quot;</type>
+        </param>
+        <param>
+          <type>(int id, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var boardGame=db.BoardGames.First(u=&gt; u.Id==id);var comments=db.BoardGameComments.Where(u=&gt; u.BoardGameId==id).ToList();db.RemoveRange(comments);db.Remove(boardGame);db.SaveChanges();}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="126" column="4" declfile="RentalBoardGames/Program.cs" declline="126" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a96e50f22ed9c163222dc6eee2658c94a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapDelete</definition>
+        <argsstring>(&quot;/DeleteComment/{id}&quot;,(int id, MyBoardsContext db)=&gt; { var comment=db.BoardGameComments.First(u=&gt; u.Id==id);db.Remove(comment);db.SaveChanges();})</argsstring>
+        <name>MapDelete</name>
+        <param>
+          <type>&quot;/DeleteComment/{id}&quot;</type>
+        </param>
+        <param>
+          <type>(int id, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
+        </param>
+        <param>
+          <type>{ var comment=db.BoardGameComments.First(u=&gt; u.Id==id);db.Remove(comment);db.SaveChanges();}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="138" column="4" declfile="RentalBoardGames/Program.cs" declline="138" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Program.cs" line="145" column="4" declfile="RentalBoardGames/Program.cs" declline="145" declcolumn="4"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Http.Json;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_rental_board_games_1_1_entities" kindref="compound">RentalBoardGames.Entities</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_rental_board_games_1_1_entities_1_1_view_models" kindref="compound">RentalBoardGames.Entities.ViewModels</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text.Json.Serialization;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Cors;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddEndpointsApiExplorer();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddSwaggerGen();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddControllers();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddCors(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>options.AddPolicy(</highlight><highlight class="stringliteral">&quot;devCorsPolicy&quot;</highlight><highlight class="normal">,<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.WithOrigins(</highlight><highlight class="stringliteral">&quot;http://localhost:4200&quot;</highlight><highlight class="normal">).AllowAnyMethod().AllowAnyHeader();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//Dzieki<sp/>tej<sp/>linijce<sp/>ignorujemy<sp/>petle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.Configure&lt;JsonOptions&gt;(options<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>options.SerializerOptions.ReferenceHandler<sp/>=<sp/>ReferenceHandler.IgnoreCycles;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddDbContext&lt;<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref>&gt;(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>option<sp/>=&gt;<sp/>option.UseSqlServer(<ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;MyBoardsConnectionString&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref><sp/>=<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Build();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>HTTP<sp/>request<sp/>pipeline.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Environment.IsDevelopment())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseSwagger();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseSwaggerUI();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//Widoki<sp/>=========================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_TopAuthors&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>topAuthors<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ad72d8740c331dd6e9a5e7e4f482e4088" kindref="member">ViewTopAuthors</ref>.ToList();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>topAuthors;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>gry<sp/>i<sp/>iloœæ ich<sp/>komentarzy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_MostComments&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>MostComments<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ae7090e6c0ee96f32526fc8d23a8b5efc" kindref="member">ViewMostComments</ref>.ToList();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MostComments;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>niedostêpne<sp/>gry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_NotAvailableGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>NotAvailableGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1abbb813a25229ee91215885c31fc964f9" kindref="member">ViewNotAvailableGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NotAvailableGames;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>Tagi<sp/>i<sp/>przyporz¹dkowane<sp/>im<sp/>gry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_TagGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>TagGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a50781c7d42fc74b988270ada5c10128f" kindref="member">ViewTagGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TagGames;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>U¿ytkowników i<sp/>ich<sp/>adresy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_UsersAdres&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>UsersAdress<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a6691cc07a0ab3b31644058b6f94007d3" kindref="member">ViewUsersAdress</ref>.ToList();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UsersAdress;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//Endpointy<sp/>=========================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//Get<sp/>gry<sp/>dane<sp/>tylko<sp/>z<sp/>tabeli<sp/>boardgames</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;Games&quot;</highlight><highlight class="normal">,<sp/>(<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{<sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boardGames;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//Get<sp/>[z<sp/>ID]<sp/>Danej<sp/>gry<sp/>+<sp/>jej<sp/>tagi<sp/>+<sp/>Komentarze</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;/GamesCommentsTags/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.BoardGames</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>.Include(u<sp/>=&gt;<sp/>u.Comments)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>.Include(h<sp/>=&gt;<sp/>h.Tags)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boardGame;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//Update<sp/>[Gry<sp/>o<sp/>ID]<sp/>Dostêpnoœæ gry<sp/>planszowej</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapPut(</highlight><highlight class="stringliteral">&quot;/ChangeAvailability/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kindref="member">if</ref><sp/>(boardGame.availability<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boardGame.availability<sp/>=<sp/>false;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boardGame.availability<sp/>=<sp/>true;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boardGame;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//Post<sp/>[]<sp/>Na<sp/>dodanie<sp/>gry<sp/>planszowej</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapPost(</highlight><highlight class="stringliteral">&quot;/CreateGame/{Name}/{Number_of_players}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Number_of_players,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref><sp/>boardGame<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Name<sp/>=<sp/>Name,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Number_of_players<sp/>=<sp/>Number_of_players,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>availability<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Add(boardGame);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boardGame;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//Delete[Gry<sp/>o<sp/>ID]<sp/>Gra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteGame/{id}&quot;</highlight><highlight class="normal">,(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comments<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1aaef501bcb52fb71bf82ec223ba1caded" kindref="member">BoardGameComments</ref>.Where(u<sp/>=&gt;<sp/>u.BoardGameId<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).ToList();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>db.RemoveRange(comments);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Remove(boardGame);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//Delete<sp/>[Po<sp/>ID<sp/>komentarza]<sp/>Komentarz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteComment/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comment<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1aaef501bcb52fb71bf82ec223ba1caded" kindref="member">BoardGameComments</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Remove(comment);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Run();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="RentalBoardGames/Program.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_rental_board_games_1_1_migrations" kind="namespace" language="C#">
+    <compoundname>RentalBoardGames::Migrations</compoundname>
+    <innerclass refid="class_rental_board_games_1_1_migrations_1_1_init" prot="public">RentalBoardGames::Migrations::Init</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot" prot="public">RentalBoardGames::Migrations::MyBoardsContextModelSnapshot</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_migrations_1_1_other_views_add" prot="public">RentalBoardGames::Migrations::OtherViewsAdd</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_migrations_1_1_seed" prot="public">RentalBoardGames::Migrations::Seed</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added" prot="public">RentalBoardGames::Migrations::ViewTopAuthorsAdded</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Migrations/20230106132958_Init.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

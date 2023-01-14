@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_migrations_1_1_init" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Migrations::Init</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_init_1a8658da4ac266b2229854377b38407679" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.Init.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>RentalBoardGames.Migrations.Init.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230106132958_Init.cs" line="14" column="33" bodyfile="RentalBoardGames/Migrations/20230106132958_Init.cs" bodystart="14" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_init_1a1756ef04e9fb6cabecff4d7d8f2b7488" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.Init.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>RentalBoardGames.Migrations.Init.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230106132958_Init.cs" line="219" column="33" bodyfile="RentalBoardGames/Migrations/20230106132958_Init.cs" bodystart="219" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_init_1af220b9df162396af57f8624ca86a255a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.Init.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>RentalBoardGames.Migrations.Init.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230106132958_Init.Designer.cs" line="19" column="33" bodyfile="RentalBoardGames/Migrations/20230106132958_Init.Designer.cs" bodystart="19" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.Init</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_init"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.Init</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_init"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RentalBoardGames/Migrations/20230106132958_Init.cs" line="11" column="19" bodyfile="RentalBoardGames/Migrations/20230106132958_Init.cs" bodystart="12" bodyend="242"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_init_1af220b9df162396af57f8624ca86a255a" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::Init</scope><name>BuildTargetModel</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_init_1a1756ef04e9fb6cabecff4d7d8f2b7488" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::Init</scope><name>Down</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_init_1a8658da4ac266b2229854377b38407679" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::Init</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

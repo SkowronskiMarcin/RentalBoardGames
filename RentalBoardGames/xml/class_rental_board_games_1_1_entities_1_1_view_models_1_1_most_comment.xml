@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Entities::ViewModels::MostComment</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1afa131cf19a23c0e72b3cb1cc048dc293" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RentalBoardGames.Entities.ViewModels.MostComment.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.MostComment.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/MostComment.cs" line="8" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/MostComment.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1aa2bc3a096f1a6a42ac1c3be0c2307f83" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.ViewModels.MostComment.Comments</definition>
+        <argsstring></argsstring>
+        <name>Comments</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.MostComment.Comments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/MostComment.cs" line="9" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/MostComment.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa do utworzenia widoku dla największej ilości komentarzy. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/ViewModels/MostComment.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/MostComment.cs" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1aa2bc3a096f1a6a42ac1c3be0c2307f83" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::MostComment</scope><name>Comments</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_most_comment_1afa131cf19a23c0e72b3cb1cc048dc293" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::MostComment</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

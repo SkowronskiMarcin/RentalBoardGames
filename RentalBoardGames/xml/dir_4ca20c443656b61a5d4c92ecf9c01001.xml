@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_4ca20c443656b61a5d4c92ecf9c01001" kind="dir">
+    <compoundname>RentalBoardGames/Migrations</compoundname>
+    <innerfile refid="20230106132958___init_8cs">20230106132958_Init.cs</innerfile>
+    <innerfile refid="20230106132958___init_8_designer_8cs">20230106132958_Init.Designer.cs</innerfile>
+    <innerfile refid="20230106143150___seed_8cs">20230106143150_Seed.cs</innerfile>
+    <innerfile refid="20230106143150___seed_8_designer_8cs">20230106143150_Seed.Designer.cs</innerfile>
+    <innerfile refid="20230111175955___view_top_authors_added_8cs">20230111175955_ViewTopAuthorsAdded.cs</innerfile>
+    <innerfile refid="20230111175955___view_top_authors_added_8_designer_8cs">20230111175955_ViewTopAuthorsAdded.Designer.cs</innerfile>
+    <innerfile refid="20230111195401___other_views_add_8cs">20230111195401_OtherViewsAdd.cs</innerfile>
+    <innerfile refid="20230111195401___other_views_add_8_designer_8cs">20230111195401_OtherViewsAdd.Designer.cs</innerfile>
+    <innerfile refid="_my_boards_context_model_snapshot_8cs">MyBoardsContextModelSnapshot.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Migrations/"/>
+  </compounddef>
+</doxygen>

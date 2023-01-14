@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_a8e541df42df8e47a6d0940a1ec5f416" kind="dir">
+    <compoundname>RentalBoardGames/Entities</compoundname>
+    <innerdir refid="dir_6b3c8cec18804ffbc244455202ce4c48">RentalBoardGames/Entities/ViewModels</innerdir>
+    <innerfile refid="_adress_8cs">Adress.cs</innerfile>
+    <innerfile refid="_board_game_8cs">BoardGame.cs</innerfile>
+    <innerfile refid="_board_game_comment_8cs">BoardGameComment.cs</innerfile>
+    <innerfile refid="_my_boards_context_8cs">MyBoardsContext.cs</innerfile>
+    <innerfile refid="_tag_8cs">Tag.cs</innerfile>
+    <innerfile refid="_transaction_8cs">Transaction.cs</innerfile>
+    <innerfile refid="_user_8cs">User.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/"/>
+  </compounddef>
+</doxygen>

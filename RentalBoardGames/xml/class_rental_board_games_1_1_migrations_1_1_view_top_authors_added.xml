@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Migrations::ViewTopAuthorsAdded</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1aad368cfeb6f9ab06c5062e865295c04f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.ViewTopAuthorsAdded.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>RentalBoardGames.Migrations.ViewTopAuthorsAdded.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" line="11" column="33" bodyfile="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1a7114d918ee192ade915b7aa1f11f1a5c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.ViewTopAuthorsAdded.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>RentalBoardGames.Migrations.ViewTopAuthorsAdded.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" line="23" column="33" bodyfile="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1adb5c236fda7a25b0aa988a48ed2997c2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.ViewTopAuthorsAdded.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>RentalBoardGames.Migrations.ViewTopAuthorsAdded.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.Designer.cs" line="19" column="33" bodyfile="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.Designer.cs" bodystart="19" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.ViewTopAuthorsAdded</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.ViewTopAuthorsAdded</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" line="8" column="19" bodyfile="RentalBoardGames/Migrations/20230111175955_ViewTopAuthorsAdded.cs" bodystart="9" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1adb5c236fda7a25b0aa988a48ed2997c2" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::ViewTopAuthorsAdded</scope><name>BuildTargetModel</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1a7114d918ee192ade915b7aa1f11f1a5c" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::ViewTopAuthorsAdded</scope><name>Down</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_view_top_authors_added_1aad368cfeb6f9ab06c5062e865295c04f" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::ViewTopAuthorsAdded</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

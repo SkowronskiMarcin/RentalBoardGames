@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Migrations::MyBoardsContextModelSnapshot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ModelSnapshot</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot_1a3b0bab6f2c83819bc8507cd88fa7a0b7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.MyBoardsContextModelSnapshot.BuildModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildModel</name>
+        <qualifiedname>RentalBoardGames.Migrations.MyBoardsContextModelSnapshot.BuildModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/MyBoardsContextModelSnapshot.cs" line="16" column="33" bodyfile="RentalBoardGames/Migrations/MyBoardsContextModelSnapshot.cs" bodystart="16" bodyend="398"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.MyBoardsContextModelSnapshot</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ModelSnapshot</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.MyBoardsContextModelSnapshot</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RentalBoardGames/Migrations/MyBoardsContextModelSnapshot.cs" line="14" column="12" bodyfile="RentalBoardGames/Migrations/MyBoardsContextModelSnapshot.cs" bodystart="15" bodyend="399"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_my_boards_context_model_snapshot_1a3b0bab6f2c83819bc8507cd88fa7a0b7" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::MyBoardsContextModelSnapshot</scope><name>BuildModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

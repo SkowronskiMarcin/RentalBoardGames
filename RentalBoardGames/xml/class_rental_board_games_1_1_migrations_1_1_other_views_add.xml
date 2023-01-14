@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_migrations_1_1_other_views_add" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Migrations::OtherViewsAdd</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a3f110a657dc7d3d205217f8fa93b83d7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.OtherViewsAdd.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>RentalBoardGames.Migrations.OtherViewsAdd.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" line="11" column="33" bodyfile="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" bodystart="11" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a729951b1b38adb5856daba84266c6c3f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.OtherViewsAdd.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>RentalBoardGames.Migrations.OtherViewsAdd.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" line="45" column="33" bodyfile="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" bodystart="45" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a61d2807c3a75586f83f8602533bbf8a9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void RentalBoardGames.Migrations.OtherViewsAdd.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>RentalBoardGames.Migrations.OtherViewsAdd.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.Designer.cs" line="19" column="33" bodyfile="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.Designer.cs" bodystart="19" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.OtherViewsAdd</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_other_views_add"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+      <node id="1">
+        <label>RentalBoardGames.Migrations.OtherViewsAdd</label>
+        <link refid="class_rental_board_games_1_1_migrations_1_1_other_views_add"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" line="8" column="19" bodyfile="RentalBoardGames/Migrations/20230111195401_OtherViewsAdd.cs" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a61d2807c3a75586f83f8602533bbf8a9" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::OtherViewsAdd</scope><name>BuildTargetModel</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a729951b1b38adb5856daba84266c6c3f" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::OtherViewsAdd</scope><name>Down</name></member>
+      <member refid="class_rental_board_games_1_1_migrations_1_1_other_views_add_1a3f110a657dc7d3d205217f8fa93b83d7" prot="protected" virt="non-virtual"><scope>RentalBoardGames::Migrations::OtherViewsAdd</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

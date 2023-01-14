@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_entities_1_1_board_game" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Entities::BoardGame</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1a8306eac55d1d7afca34cd76dcd935be2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.BoardGame.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1ab71161b0e03cbe8a711d7f41f347228d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RentalBoardGames.Entities.BoardGame.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="9" column="23" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1a282bd07bdd218099db918c9e5bdaadc4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.BoardGame.Number_of_players</definition>
+        <argsstring></argsstring>
+        <name>Number_of_players</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Number_of_players</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="10" column="20" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1a87f8386a0edd19433c1fb6e9733f900d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool?</type>
+        <definition>bool? RentalBoardGames.Entities.BoardGame.availability</definition>
+        <argsstring></argsstring>
+        <name>availability</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.availability</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="11" column="21" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1a3a0e0869a5947b0a47b526c32617499e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_rental_board_games_1_1_entities_1_1_board_game_comment" kindref="compound">BoardGameComment</ref> &gt;</type>
+        <definition>List&lt;BoardGameComment&gt; RentalBoardGames.Entities.BoardGame.Comments</definition>
+        <argsstring></argsstring>
+        <name>Comments</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Comments</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_rental_board_games_1_1_entities_1_1_board_game_comment" kindref="compound">BoardGameComment</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="14" column="21" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1aacd05a3a8fe3715a91b870bdd7d5c2ed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_rental_board_games_1_1_entities_1_1_transaction" kindref="compound">Transaction</ref> &gt;</type>
+        <definition>List&lt;Transaction&gt; RentalBoardGames.Entities.BoardGame.Transactions</definition>
+        <argsstring></argsstring>
+        <name>Transactions</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Transactions</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_rental_board_games_1_1_entities_1_1_transaction" kindref="compound">Transaction</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="16" column="21" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_1ad138f1414063a52fe7384524634ab711" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_rental_board_games_1_1_entities_1_1_tag" kindref="compound">Tag</ref> &gt;</type>
+        <definition>List&lt;Tag&gt; RentalBoardGames.Entities.BoardGame.Tags</definition>
+        <argsstring></argsstring>
+        <name>Tags</name>
+        <qualifiedname>RentalBoardGames.Entities.BoardGame.Tags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/BoardGame.cs" line="19" column="21" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa dla encji do gier planszowych. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/BoardGame.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/BoardGame.cs" bodystart="7" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a87f8386a0edd19433c1fb6e9733f900d" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>availability</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a3a0e0869a5947b0a47b526c32617499e" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Comments</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a8306eac55d1d7afca34cd76dcd935be2" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Id</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1ab71161b0e03cbe8a711d7f41f347228d" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Name</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1a282bd07bdd218099db918c9e5bdaadc4" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Number_of_players</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1ad138f1414063a52fe7384524634ab711" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Tags</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_board_game_1aacd05a3a8fe3715a91b870bdd7d5c2ed" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGame</scope><name>Transactions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

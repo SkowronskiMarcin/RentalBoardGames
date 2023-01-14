@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_rental_board_games" kind="namespace" language="C#">
+    <compoundname>RentalBoardGames</compoundname>
+    <innerclass refid="class_rental_board_games_1_1_configure_services" prot="public">RentalBoardGames::ConfigureServices</innerclass>
+    <innernamespace refid="namespace_rental_board_games_1_1_entities">RentalBoardGames::Entities</innernamespace>
+    <innernamespace refid="namespace_rental_board_games_1_1_migrations">RentalBoardGames::Migrations</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/ConfigureServices.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

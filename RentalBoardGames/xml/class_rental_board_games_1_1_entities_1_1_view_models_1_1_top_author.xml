@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Entities::ViewModels::TopAuthor</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1aac37bce3bbe734aac75a6983d0c3aa18" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RentalBoardGames.Entities.ViewModels.TopAuthor.FullName</definition>
+        <argsstring></argsstring>
+        <name>FullName</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.TopAuthor.FullName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="8" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1adc7c84ebd2091a909656d97796fe518c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.ViewModels.TopAuthor.CommentsCreated</definition>
+        <argsstring></argsstring>
+        <name>CommentsCreated</name>
+        <qualifiedname>RentalBoardGames.Entities.ViewModels.TopAuthor.CommentsCreated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="9" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa do utworzenia widoku do zwrócenia autora. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1adc7c84ebd2091a909656d97796fe518c" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::TopAuthor</scope><name>CommentsCreated</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1aac37bce3bbe734aac75a6983d0c3aa18" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::TopAuthor</scope><name>FullName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

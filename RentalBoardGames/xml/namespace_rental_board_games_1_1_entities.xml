@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_rental_board_games_1_1_entities" kind="namespace" language="C#">
+    <compoundname>RentalBoardGames::Entities</compoundname>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_adress" prot="public">RentalBoardGames::Entities::Adress</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_board_game" prot="public">RentalBoardGames::Entities::BoardGame</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_board_game_comment" prot="public">RentalBoardGames::Entities::BoardGameComment</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" prot="public">RentalBoardGames::Entities::MyBoardsContext</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_tag" prot="public">RentalBoardGames::Entities::Tag</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_transaction" prot="public">RentalBoardGames::Entities::Transaction</innerclass>
+    <innerclass refid="class_rental_board_games_1_1_entities_1_1_user" prot="public">RentalBoardGames::Entities::User</innerclass>
+    <innernamespace refid="namespace_rental_board_games_1_1_entities_1_1_view_models">RentalBoardGames::Entities::ViewModels</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/Adress.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

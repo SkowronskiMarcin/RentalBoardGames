@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_rental_board_games_1_1_entities_1_1_transaction" kind="class" language="C#" prot="public">
+    <compoundname>RentalBoardGames::Entities::Transaction</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1aa1d0a522bcfc9e21bdeec6232ad50d41" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.Transaction.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1aa9c124ecb95e5ede3ef476e211632f0b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime RentalBoardGames.Entities.Transaction.CreatedDate</definition>
+        <argsstring></argsstring>
+        <name>CreatedDate</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.CreatedDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="9" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a893ddc39054fc04314eab2f8c537f746" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime RentalBoardGames.Entities.Transaction.Deadline</definition>
+        <argsstring></argsstring>
+        <name>Deadline</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.Deadline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="10" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a9dd7e8817741400342f8664fc4672fb0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_rental_board_games_1_1_entities_1_1_user" kindref="compound">User</ref></type>
+        <definition>User RentalBoardGames.Entities.Transaction.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="13" column="21" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a4dfa485d7ca4954625c7fe3d5aa2aee6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.Transaction.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="14" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a48b1dd8f548cf6da4451485a3b35d110" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref></type>
+        <definition>BoardGame RentalBoardGames.Entities.Transaction.BoardGame</definition>
+        <argsstring></argsstring>
+        <name>BoardGame</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.BoardGame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="17" column="26" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a0a7c8b7b6e5f6aed0f29aae8d38c0253" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int RentalBoardGames.Entities.Transaction.BoardGameId</definition>
+        <argsstring></argsstring>
+        <name>BoardGameId</name>
+        <qualifiedname>RentalBoardGames.Entities.Transaction.BoardGameId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="18" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa dla encji do transakcji. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/Entities/Transaction.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a48b1dd8f548cf6da4451485a3b35d110" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>BoardGame</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a0a7c8b7b6e5f6aed0f29aae8d38c0253" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>BoardGameId</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1aa9c124ecb95e5ede3ef476e211632f0b" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>CreatedDate</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a893ddc39054fc04314eab2f8c537f746" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>Deadline</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1aa1d0a522bcfc9e21bdeec6232ad50d41" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>Id</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a9dd7e8817741400342f8664fc4672fb0" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>User</name></member>
+      <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a4dfa485d7ca4954625c7fe3d5aa2aee6" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

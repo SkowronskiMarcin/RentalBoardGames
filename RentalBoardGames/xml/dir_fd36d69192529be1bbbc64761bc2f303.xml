@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_fd36d69192529be1bbbc64761bc2f303" kind="dir">
+    <compoundname>RentalBoardGames</compoundname>
+    <innerdir refid="dir_a8e541df42df8e47a6d0940a1ec5f416">RentalBoardGames/Entities</innerdir>
+    <innerdir refid="dir_4ca20c443656b61a5d4c92ecf9c01001">RentalBoardGames/Migrations</innerdir>
+    <innerdir refid="dir_e7e62e7e5bfada64492c27961e83613a">RentalBoardGames/obj</innerdir>
+    <innerfile refid="_configure_services_8cs">ConfigureServices.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="RentalBoardGames/"/>
+  </compounddef>
+</doxygen>
