@@ -10,12 +10,13 @@
         <name>Id</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.Id</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Id. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="8" bodyend="8"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="11" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="11" bodyend="11"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1aa9c124ecb95e5ede3ef476e211632f0b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>DateTime</type>
@@ -24,12 +25,13 @@
         <name>CreatedDate</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.CreatedDate</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column CreatedDate. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="9" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="9" bodyend="9"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="15" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a893ddc39054fc04314eab2f8c537f746" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>DateTime</type>
@@ -38,12 +40,13 @@
         <name>Deadline</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.Deadline</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Deadline. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="10" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="10" bodyend="10"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="19" column="25" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="19" bodyend="19"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a9dd7e8817741400342f8664fc4672fb0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_rental_board_games_1_1_entities_1_1_user" kindref="compound">User</ref></type>
@@ -52,12 +55,13 @@
         <name>User</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.User</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column User. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="13" column="21" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="13" bodyend="13"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="25" column="21" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="25" bodyend="25"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a4dfa485d7ca4954625c7fe3d5aa2aee6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -66,12 +70,13 @@
         <name>UserId</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.UserId</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column UserId. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="14" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="14" bodyend="14"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="29" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="29" bodyend="29"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a48b1dd8f548cf6da4451485a3b35d110" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref></type>
@@ -80,12 +85,13 @@
         <name>BoardGame</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.BoardGame</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column BoardGame. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="17" column="26" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="17" bodyend="17"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="35" column="26" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_transaction_1a0a7c8b7b6e5f6aed0f29aae8d38c0253" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -94,20 +100,21 @@
         <name>BoardGameId</name>
         <qualifiedname>RentalBoardGames.Entities.Transaction.BoardGameId</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column BoardGameId. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/Transaction.cs" line="18" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="18" bodyend="18"/>
+        <location file="RentalBoardGames/Entities/Transaction.cs" line="39" column="20" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="39" bodyend="39"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Klasa dla encji do transakcji. </para>
+<para>Class entity for transaction. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="RentalBoardGames/Entities/Transaction.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="7" bodyend="19"/>
+    <location file="RentalBoardGames/Entities/Transaction.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/Transaction.cs" bodystart="7" bodyend="40"/>
     <listofallmembers>
       <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a48b1dd8f548cf6da4451485a3b35d110" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>BoardGame</name></member>
       <member refid="class_rental_board_games_1_1_entities_1_1_transaction_1a0a7c8b7b6e5f6aed0f29aae8d38c0253" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::Transaction</scope><name>BoardGameId</name></member>

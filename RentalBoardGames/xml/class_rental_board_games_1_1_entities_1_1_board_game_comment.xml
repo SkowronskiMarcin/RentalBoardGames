@@ -10,12 +10,13 @@
         <name>Id</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.Id</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Id. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="8" bodyend="8"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="11" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="11" bodyend="11"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a37db39ea4189365945db3e81ea6b30de" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -24,12 +25,13 @@
         <name>Message</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.Message</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Message. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="9" column="23" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="9" bodyend="9"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="15" column="23" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1ae058d2847b60669ed259954e21ffb70e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -38,12 +40,13 @@
         <name>Author</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.Author</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Author. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="10" column="23" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="10" bodyend="10"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="19" column="23" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="19" bodyend="19"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1aa2e8863ecdde0314bfa917f2475f5d56" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>DateTime</type>
@@ -52,12 +55,13 @@
         <name>CreatedDate</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.CreatedDate</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column CreatedDate. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="11" column="25" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="11" bodyend="11"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="23" column="25" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a626d498d570ce7db07a14806fd0f617e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>DateTime?</type>
@@ -66,12 +70,13 @@
         <name>UpdatedDate</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.UpdatedDate</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column UpdatedDate. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="12" column="25" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="12" bodyend="12"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="27" column="25" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a6c3f23ac2c2aab52f4c8f56892ab0729" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref></type>
@@ -80,12 +85,13 @@
         <name>BoardGame</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.BoardGame</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column BoardGame. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="15" column="26" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="15" bodyend="15"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="33" column="26" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="33" bodyend="33"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a845feb735a3dde4a63040c48bd1019bd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -94,12 +100,13 @@
         <name>BoardGameId</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.BoardGameId</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column BoardGameId. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="16" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="16" bodyend="16"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="38" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="38" bodyend="38"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a23a0361a93cf4c0a265aabf8a2f0dc1b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type><ref refid="class_rental_board_games_1_1_entities_1_1_user" kindref="compound">User</ref></type>
@@ -108,12 +115,13 @@
         <name>User</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.User</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column User. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="20" column="21" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="20" bodyend="20"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="44" column="21" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="44" bodyend="44"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a379b1184e23ff7c7faa81c3e07c65916" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -122,20 +130,21 @@
         <name>UserId</name>
         <qualifiedname>RentalBoardGames.Entities.BoardGameComment.UserId</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column UserId. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="21" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="21" bodyend="21"/>
+        <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="48" column="20" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="48" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Klasa dla encji do komentarzy. </para>
+<para>Class entity for Board game comment. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="7" bodyend="22"/>
+    <location file="RentalBoardGames/Entities/BoardGameComment.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/BoardGameComment.cs" bodystart="7" bodyend="49"/>
     <listofallmembers>
       <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1ae058d2847b60669ed259954e21ffb70e" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGameComment</scope><name>Author</name></member>
       <member refid="class_rental_board_games_1_1_entities_1_1_board_game_comment_1a6c3f23ac2c2aab52f4c8f56892ab0729" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::BoardGameComment</scope><name>BoardGame</name></member>

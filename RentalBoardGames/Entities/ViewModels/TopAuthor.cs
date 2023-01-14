@@ -1,11 +1,17 @@
 ﻿namespace RentalBoardGames.Entities.ViewModels
 {
     /// <summary>
-    /// Klasa do utworzenia widoku do zwrócenia autora
+    /// Class to create a View for top author
     /// </summary>
     public class TopAuthor
     {
+        /// <summary>
+        /// Getters and setters for column FullName
+        /// </summary>
         public string FullName { get; set; }
+        /// <summary>
+        /// Getters and setters for column CommentsCreated
+        /// </summary>
         public int CommentsCreated { get; set; } 
     }
 }

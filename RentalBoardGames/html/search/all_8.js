@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['id_0',['Id',['../class_rental_board_games_1_1_entities_1_1_adress.html#a62e774cf152b094030bf3b17504964fd',1,'RentalBoardGames.Entities.Adress.Id()'],['../class_rental_board_games_1_1_entities_1_1_board_game.html#a8306eac55d1d7afca34cd76dcd935be2',1,'RentalBoardGames.Entities.BoardGame.Id()'],['../class_rental_board_games_1_1_entities_1_1_board_game_comment.html#a6ce99a130bbf7d6e9fd29c8779025bb4',1,'RentalBoardGames.Entities.BoardGameComment.Id()'],['../class_rental_board_games_1_1_entities_1_1_tag.html#acae1307829efc852bb6ecca066417cc4',1,'RentalBoardGames.Entities.Tag.Id()'],['../class_rental_board_games_1_1_entities_1_1_transaction.html#aa1d0a522bcfc9e21bdeec6232ad50d41',1,'RentalBoardGames.Entities.Transaction.Id()'],['../class_rental_board_games_1_1_entities_1_1_user.html#a8aece3a6178eafe5f577d891e4e633e3',1,'RentalBoardGames.Entities.User.Id()'],['../class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress.html#a6cb08f5806bad5ba210622f0b44c387a',1,'RentalBoardGames.Entities.ViewModels.UserAdress.Id()']]],
-  ['if_1',['if',['../_program_8cs.html#a79a944c7f0e25196ca3c5a8638b919b9',1,'Program.cs']]],
-  ['init_2',['Init',['../class_rental_board_games_1_1_migrations_1_1_init.html',1,'RentalBoardGames::Migrations']]]
-];

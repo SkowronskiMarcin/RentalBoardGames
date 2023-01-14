@@ -5,7 +5,7 @@ using RentalBoardGames.Entities.ViewModels;
 namespace RentalBoardGames.Entities
 {
     /// <summary>
-    /// Klasa odpowiadająca za migracje bazy danych
+    /// Class for database migration
     /// </summary>
     public class MyBoardsContext : DbContext
     {

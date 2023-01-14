@@ -10,12 +10,13 @@
         <name>FullName</name>
         <qualifiedname>RentalBoardGames.Entities.ViewModels.TopAuthor.FullName</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column FullName. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="8" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="8" bodyend="8"/>
+        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="11" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="11" bodyend="11"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1adc7c84ebd2091a909656d97796fe518c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>int</type>
@@ -24,20 +25,21 @@
         <name>CommentsCreated</name>
         <qualifiedname>RentalBoardGames.Entities.ViewModels.TopAuthor.CommentsCreated</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column CommentsCreated. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="9" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="9" bodyend="9"/>
+        <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="15" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="15" bodyend="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Klasa do utworzenia widoku do zwrócenia autora. </para>
+<para>Class to create a View for top author. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="7" bodyend="10"/>
+    <location file="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/TopAuthor.cs" bodystart="7" bodyend="16"/>
     <listofallmembers>
       <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1adc7c84ebd2091a909656d97796fe518c" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::TopAuthor</scope><name>CommentsCreated</name></member>
       <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_top_author_1aac37bce3bbe734aac75a6983d0c3aa18" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::TopAuthor</scope><name>FullName</name></member>

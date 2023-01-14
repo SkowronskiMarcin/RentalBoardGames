@@ -1,11 +1,17 @@
 ﻿namespace RentalBoardGames.Entities.ViewModels
 {
     /// <summary>
-    /// Klasa do utworzenia widoku do zwrócenia gier o danym tagu
+    /// Class to create a View for taged games 
     /// </summary>
     public class TagGame
     {
+        /// <summary>
+        /// Getters and setters for column Value
+        /// </summary>
         public string Value { get; set; }
+        /// <summary>
+        /// Getters and setters for column Name
+        /// </summary>
         public string Name { get; set; }
     }
 }

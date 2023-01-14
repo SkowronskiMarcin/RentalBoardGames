@@ -65,7 +65,7 @@
   <option  id='TYPEDEF_HIDES_STRUCT' default='yes' type='bool'><value>NO</value></option>
   <option  id='LOOKUP_CACHE_SIZE' default='yes' type='int'><value>0</value></option>
   <option  id='NUM_PROC_THREADS' default='yes' type='int'><value>1</value></option>
-  <option  id='EXTRACT_ALL' default='no' type='bool'><value>YES</value></option>
+  <option  id='EXTRACT_ALL' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_PRIVATE' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_PRIV_VIRTUAL' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTRACT_PACKAGE' default='yes' type='bool'><value>NO</value></option>
@@ -255,7 +255,7 @@
   <option  id='GENERATE_ECLIPSEHELP' default='yes' type='bool'><value>NO</value></option>
   <option  id='ECLIPSE_DOC_ID' default='yes' type='string'><value><![CDATA[org.doxygen.Project]]></value></option>
   <option  id='DISABLE_INDEX' default='yes' type='bool'><value>NO</value></option>
-  <option  id='GENERATE_TREEVIEW' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_TREEVIEW' default='no' type='bool'><value>YES</value></option>
   <option  id='FULL_SIDEBAR' default='yes' type='bool'><value>NO</value></option>
   <option  id='ENUM_VALUES_PER_LINE' default='yes' type='int'><value>4</value></option>
   <option  id='TREEVIEW_WIDTH' default='yes' type='int'><value>250</value></option>
@@ -271,7 +271,7 @@
   <option  id='MATHJAX_EXTENSIONS' default='yes' type='stringlist'>
   </option>
   <option  id='MATHJAX_CODEFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='SEARCHENGINE' default='yes' type='bool'><value>YES</value></option>
+  <option  id='SEARCHENGINE' default='no' type='bool'><value>NO</value></option>
   <option  id='SERVER_BASED_SEARCH' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTERNAL_SEARCH' default='yes' type='bool'><value>NO</value></option>
   <option  id='SEARCHENGINE_URL' default='yes' type='string'><value><![CDATA[]]></value></option>

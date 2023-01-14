@@ -84,7 +84,7 @@
           <type>options</type>
         </param>
         <param>
-          <type>{ options.AddPolicy(&quot;devCorsPolicy&quot;, <ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>=&gt; { builder.WithOrigins(&quot;http://localhost:4200&quot;).AllowAnyMethod().AllowAnyHeader();});}</type>
+          <type>{ options.AddPolicy(&quot;devCorsPolicy&quot;, builder=&gt; { builder.WithOrigins(&quot;http://localhost:4200&quot;).AllowAnyMethod().AllowAnyHeader();});}</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -318,7 +318,7 @@
           <type>(int id, <ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref> db)</type>
         </param>
         <param>
-          <type>{ var boardGame=db.BoardGames.First(u=&gt; u.Id==id);<ref refid="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kindref="member">if</ref>(boardGame.availability==true) { boardGame.availability=false;} else{ boardGame.availability=true;} db.SaveChanges();return boardGame;}</type>
+          <type>{ var boardGame=db.BoardGames.First(u=&gt; u.Id==id);if(boardGame.availability==true) { boardGame.availability=false;} else{ boardGame.availability=true;} db.SaveChanges();return boardGame;}</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -420,71 +420,71 @@
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text.Json.Serialization;</highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Cors;</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">var<sp/>builder<sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddEndpointsApiExplorer();</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddSwaggerGen();</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddControllers();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">builder.Services.AddEndpointsApiExplorer();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">builder.Services.AddSwaggerGen();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">builder.Services.AddControllers();</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddCors(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">builder.Services.AddCors(options<sp/>=&gt;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>options.AddPolicy(</highlight><highlight class="stringliteral">&quot;devCorsPolicy&quot;</highlight><highlight class="normal">,<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>options.AddPolicy(</highlight><highlight class="stringliteral">&quot;devCorsPolicy&quot;</highlight><highlight class="normal">,<sp/>builder<sp/>=&gt;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.WithOrigins(</highlight><highlight class="stringliteral">&quot;http://localhost:4200&quot;</highlight><highlight class="normal">).AllowAnyMethod().AllowAnyHeader();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builder.WithOrigins(</highlight><highlight class="stringliteral">&quot;http://localhost:4200&quot;</highlight><highlight class="normal">).AllowAnyMethod().AllowAnyHeader();</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//Dzieki<sp/>tej<sp/>linijce<sp/>ignorujemy<sp/>petle</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.Configure&lt;JsonOptions&gt;(options<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">builder.Services.Configure&lt;JsonOptions&gt;(options<sp/>=&gt;<sp/></highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>options.SerializerOptions.ReferenceHandler<sp/>=<sp/>ReferenceHandler.IgnoreCycles;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddDbContext&lt;<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref>&gt;(</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>option<sp/>=&gt;<sp/>option.UseSqlServer(<ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;MyBoardsConnectionString&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">builder.Services.AddDbContext&lt;<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref>&gt;(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>option<sp/>=&gt;<sp/>option.UseSqlServer(builder.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;MyBoardsConnectionString&quot;</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref><sp/>=<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Build();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">var<sp/>app<sp/>=<sp/>builder.Build();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>HTTP<sp/>request<sp/>pipeline.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Environment.IsDevelopment())</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(app.Environment.IsDevelopment())</highlight></codeline>
 <codeline lineno="37"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseSwagger();</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseSwaggerUI();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseSwagger();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>app.UseSwaggerUI();</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//Widoki<sp/>=========================================================================================</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_TopAuthors&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;View_TopAuthors&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
 <codeline lineno="46"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>topAuthors<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ad72d8740c331dd6e9a5e7e4f482e4088" kindref="member">ViewTopAuthors</ref>.ToList();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>topAuthors<sp/>=<sp/>db.ViewTopAuthors.ToList();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>topAuthors;<sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="49"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>gry<sp/>i<sp/>iloœæ ich<sp/>komentarzy</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_MostComments&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;View_MostComments&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>MostComments<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1ae7090e6c0ee96f32526fc8d23a8b5efc" kindref="member">ViewMostComments</ref>.ToList();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>MostComments<sp/>=<sp/>db.ViewMostComments.ToList();</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MostComments;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>niedostêpne<sp/>gry</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_NotAvailableGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;View_NotAvailableGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>NotAvailableGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1abbb813a25229ee91215885c31fc964f9" kindref="member">ViewNotAvailableGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>NotAvailableGames<sp/>=<sp/>db.ViewNotAvailableGames.ToList();</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NotAvailableGames;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>Tagi<sp/>i<sp/>przyporz¹dkowane<sp/>im<sp/>gry</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_TagGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;View_TagGames&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>TagGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a50781c7d42fc74b988270ada5c10128f" kindref="member">ViewTagGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>TagGames<sp/>=<sp/>db.ViewTagGames.ToList();</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TagGames;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Zwraca<sp/>U¿ytkowników i<sp/>ich<sp/>adresy</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;View_UsersAdres&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;View_UsersAdres&quot;</highlight><highlight class="normal">,<sp/>(<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>UsersAdress<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a6691cc07a0ab3b31644058b6f94007d3" kindref="member">ViewUsersAdress</ref>.ToList();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>UsersAdress<sp/>=<sp/>db.ViewUsersAdress.ToList();</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>UsersAdress;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
@@ -492,14 +492,14 @@
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//Get<sp/>gry<sp/>dane<sp/>tylko<sp/>z<sp/>tabeli<sp/>boardgames</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;Games&quot;</highlight><highlight class="normal">,<sp/>(<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;Games&quot;</highlight><highlight class="normal">,<sp/>(<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal">{<sp/><sp/></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGames<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.ToList();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGames<sp/>=<sp/>db.BoardGames.ToList();</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boardGames;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//Get<sp/>[z<sp/>ID]<sp/>Danej<sp/>gry<sp/>+<sp/>jej<sp/>tagi<sp/>+<sp/>Komentarze</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;/GamesCommentsTags/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">app.MapGet(</highlight><highlight class="stringliteral">&quot;/GamesCommentsTags/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;<sp/></highlight></codeline>
 <codeline lineno="88"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.BoardGames</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>.Include(u<sp/>=&gt;<sp/>u.Comments)</highlight></codeline>
@@ -509,10 +509,10 @@
 <codeline lineno="94"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//Update<sp/>[Gry<sp/>o<sp/>ID]<sp/>Dostêpnoœæ gry<sp/>planszowej</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapPut(</highlight><highlight class="stringliteral">&quot;/ChangeAvailability/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">app.MapPut(</highlight><highlight class="stringliteral">&quot;/ChangeAvailability/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a79a944c7f0e25196ca3c5a8638b919b9" kindref="member">if</ref><sp/>(boardGame.availability<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.BoardGames.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(boardGame.availability<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boardGame.availability<sp/>=<sp/>false;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
@@ -524,7 +524,7 @@
 <codeline lineno="109"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//Post<sp/>[]<sp/>Na<sp/>dodanie<sp/>gry<sp/>planszowej</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapPost(</highlight><highlight class="stringliteral">&quot;/CreateGame/{Name}/{Number_of_players}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Number_of_players,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">app.MapPost(</highlight><highlight class="stringliteral">&quot;/CreateGame/{Name}/{Number_of_players}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Number_of_players,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref><sp/>boardGame<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rental_board_games_1_1_entities_1_1_board_game" kindref="compound">BoardGame</ref>()</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -538,10 +538,10 @@
 <codeline lineno="123"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//Delete[Gry<sp/>o<sp/>ID]<sp/>Gra</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteGame/{id}&quot;</highlight><highlight class="normal">,(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">app.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteGame/{id}&quot;</highlight><highlight class="normal">,(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="127"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1a2669a9bde8e70472935c7f20e1316911" kindref="member">BoardGames</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comments<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1aaef501bcb52fb71bf82ec223ba1caded" kindref="member">BoardGameComments</ref>.Where(u<sp/>=&gt;<sp/>u.BoardGameId<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).ToList();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>boardGame<sp/>=<sp/>db.BoardGames.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comments<sp/>=<sp/>db.BoardGameComments.Where(u<sp/>=&gt;<sp/>u.BoardGameId<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">).ToList();</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>db.RemoveRange(comments);</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Remove(boardGame);</highlight></codeline>
@@ -550,14 +550,14 @@
 <codeline lineno="135"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//Delete<sp/>[Po<sp/>ID<sp/>komentarza]<sp/>Komentarz</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteComment/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">app.MapDelete(</highlight><highlight class="stringliteral">&quot;/DeleteComment/{id}&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context" kindref="compound">MyBoardsContext</ref><sp/>db)<sp/>=&gt;</highlight></codeline>
 <codeline lineno="139"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comment<sp/>=<sp/>db.<ref refid="class_rental_board_games_1_1_entities_1_1_my_boards_context_1aaef501bcb52fb71bf82ec223ba1caded" kindref="member">BoardGameComments</ref>.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>comment<sp/>=<sp/>db.BoardGameComments.First(u<sp/>=&gt;<sp/>u.Id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Remove(comment);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
 <codeline lineno="143"><highlight class="normal">});</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Run();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">app.Run();</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="RentalBoardGames/Program.cs"/>

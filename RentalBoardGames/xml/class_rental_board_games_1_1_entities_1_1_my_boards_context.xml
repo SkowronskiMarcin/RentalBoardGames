@@ -200,7 +200,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Klasa odpowiadająca za migracje bazy danych. </para>
+<para>Class for database migration. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

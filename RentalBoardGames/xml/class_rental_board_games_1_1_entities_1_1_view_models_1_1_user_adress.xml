@@ -10,12 +10,13 @@
         <name>Id</name>
         <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.Id</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Id. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="8" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="8" bodyend="8"/>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="11" column="20" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="11" bodyend="11"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a139db4eebe79ddf3d4c624a3f2ca106e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -24,12 +25,13 @@
         <name>FullName</name>
         <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.FullName</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column FullName. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="9" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="9" bodyend="9"/>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="15" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="property" id="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a8cbaa6447ed9f327541906e845c11400" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -38,20 +40,21 @@
         <name>Adress</name>
         <qualifiedname>RentalBoardGames.Entities.ViewModels.UserAdress.Adress</qualifiedname>
         <briefdescription>
+<para>Getters and setters for column Adress. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="10" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="10" bodyend="10"/>
+        <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="19" column="23" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="19" bodyend="19"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Klasa do utworzenia widoku do zwrócenia adresu użytkownika. </para>
+<para>Class to create a View for user address. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="7" bodyend="11"/>
+    <location file="RentalBoardGames/Entities/ViewModels/UserAdress.cs" line="6" column="11" bodyfile="RentalBoardGames/Entities/ViewModels/UserAdress.cs" bodystart="7" bodyend="20"/>
     <listofallmembers>
       <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a8cbaa6447ed9f327541906e845c11400" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::UserAdress</scope><name>Adress</name></member>
       <member refid="class_rental_board_games_1_1_entities_1_1_view_models_1_1_user_adress_1a139db4eebe79ddf3d4c624a3f2ca106e" prot="public" virt="non-virtual"><scope>RentalBoardGames::Entities::ViewModels::UserAdress</scope><name>FullName</name></member>
